@@ -1,0 +1,131 @@
+{
+  "runId": "benchmark-2026-10-05T00-41-03-474Z-5f192784",
+  "phase": "benchmark",
+  "status": "completed",
+  "createdAt": "2026-10-05T00:41:03.474Z",
+  "models": {
+    "jev": "jev-1.13.0",
+    "claude": "claude-haiku-4-5-20251001"
+  },
+  "datasetSha256": "f8a18bb13af40ca15ff99455eb604e292f4ab3facc18f0c2f96ff5fff9635b41",
+  "questionsSha256": "0d91218be4d3c83dda2453a84d6c561e7ee56938f0c870d57c2ff1527e3471ea",
+  "caseIds": [
+    "CN-SIM-0001",
+    "CN-SIM-0002",
+    "CN-SIM-0003",
+    "CN-SIM-0004",
+    "CN-SIM-0005",
+    "CN-SIM-0006",
+    "CN-SIM-0007",
+    "CN-SIM-0008",
+    "CN-SIM-0009",
+    "CN-SIM-0010",
+    "CN-SIM-0011",
+    "CN-SIM-0012",
+    "CN-SIM-0013",
+    "CN-SIM-0014",
+    "CN-SIM-0015",
+    "CN-SIM-0016",
+    "CN-SIM-0017",
+    "CN-SIM-0018",
+    "CN-SIM-0019",
+    "CN-SIM-0020",
+    "CN-SIM-0021",
+    "CN-SIM-0022",
+    "CN-SIM-0023",
+    "CN-SIM-0024",
+    "CN-SIM-0025",
+    "CN-SIM-0026",
+    "CN-SIM-0027",
+    "CN-SIM-0028",
+    "CN-SIM-0029",
+    "CN-SIM-0030",
+    "CN-SIM-0031",
+    "CN-SIM-0032",
+    "CN-SIM-0033",
+    "CN-SIM-0034",
+    "CN-SIM-0035",
+    "CN-SIM-0036",
+    "CN-SIM-0037",
+    "CN-SIM-0038",
+    "CN-SIM-0039",
+    "CN-SIM-0040",
+    "CN-SIM-0041",
+    "CN-SIM-0042",
+    "CN-SIM-0043",
+    "CN-SIM-0044",
+    "CN-SIM-0045",
+    "CN-SIM-0046",
+    "CN-SIM-0047",
+    "CN-SIM-0048",
+    "CN-SIM-0049",
+    "CN-SIM-0050"
+  ],
+  "reservedCalls": {
+    "jev": 50,
+    "claude": 50
+  },
+  "claudeBoundUsd": 0.468813,
+  "costBoundMethod": "Free Anthropic token-count estimate + 256 input-token margin per call, plus 384 maximum output tokens; requests hashed and full batch reserved before execution. Estimate is not a mathematically guaranteed billing bound.",
+  "rates": {
+    "claude": {
+      "inputPerMillionUsd": 1,
+      "outputPerMillionUsd": 5,
+      "verified": true,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    "jev": {
+      "inputPerMillionUsd": 0.042,
+      "outputPerMillionUsd": 0,
+      "verified": true,
+      "source": "https://docs.typesafe.ai/models"
+    }
+  },
+  "validResults": 100,
+  "providers": {
+    "jev": {
+      "batchElapsedMs": 9423.726318,
+      "startedAt": "2026-10-05T00:41:03.474Z",
+      "completedAt": "2026-10-05T00:41:12.911Z",
+      "completed": 50,
+      "total": 50,
+      "medianRequestMs": 351.53217900000163,
+      "estimatedCostUsd": 0.015044945999999997,
+      "categoryCorrect": 276,
+      "categoryTotal": 300,
+      "evidenceCorrect": 245,
+      "evidenceTotal": 300,
+      "validationFailures": 0,
+      "successful": 50,
+      "inputTokens": 358213,
+      "outputTokens": 100317,
+      "returnedModels": [
+        "jev-1.13.0"
+      ],
+      "timingDefinition": "Common batch dispatch to last response body received; concurrency two, no retries or reused responses."
+    },
+    "claude": {
+      "batchElapsedMs": 66993.096115,
+      "startedAt": "2026-10-05T00:41:03.474Z",
+      "completedAt": "2026-10-05T00:42:10.480Z",
+      "completed": 50,
+      "total": 50,
+      "medianRequestMs": 2565.68901300001,
+      "estimatedCostUsd": 0.4374779999999999,
+      "categoryCorrect": 271,
+      "categoryTotal": 300,
+      "evidenceCorrect": 266,
+      "evidenceTotal": 300,
+      "validationFailures": 0,
+      "successful": 50,
+      "inputTokens": 364863,
+      "outputTokens": 14523,
+      "returnedModels": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "timingDefinition": "Common batch dispatch to last response body received; concurrency two, no retries or reused responses."
+    }
+  },
+  "completedAt": "2026-10-05T00:42:10.481Z",
+  "batchElapsedMs": 66995.64952199999
+}

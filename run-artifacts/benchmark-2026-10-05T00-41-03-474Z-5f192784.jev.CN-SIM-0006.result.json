@@ -1,0 +1,67 @@
+{
+  "runId": "benchmark-2026-10-05T00-41-03-474Z-5f192784",
+  "phase": "benchmark",
+  "caseId": "CN-SIM-0006",
+  "provider": "jev",
+  "requestedModel": "jev-1.13.0",
+  "returnedModel": "jev-1.13.0",
+  "status": "success",
+  "elapsedMs": 349.26163400002406,
+  "startedAt": "2026-10-05T00:41:04.397Z",
+  "completedAt": "2026-10-05T00:41:04.755Z",
+  "httpStatus": 200,
+  "usage": {
+    "inputTokens": 8802,
+    "outputTokens": 2512,
+    "cacheCreationInputTokens": null,
+    "cacheReadInputTokens": null
+  },
+  "estimatedCostUsd": 0.000369684,
+  "rateVerified": true,
+  "costLabel": "Estimated from reported token usage and configured published rates; not an invoice.",
+  "normalized": {
+    "need": "document",
+    "need_evidence": "CN-SIM-0006-M002",
+    "difficulty": "portal_failure",
+    "difficulty_evidence": "CN-SIM-0006-M007",
+    "resolution": "unresolved",
+    "resolution_evidence": "CN-SIM-0006-M020",
+    "positive_evaluation": "absent",
+    "positive_evaluation_evidence": "insufficient",
+    "negative_evaluation": "present",
+    "negative_evaluation_evidence": "CN-SIM-0006-M012",
+    "transfer_reason": "process_failure",
+    "transfer_reason_evidence": "insufficient"
+  },
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "score": {
+    "categories": {
+      "correct": 6,
+      "total": 6
+    },
+    "evidence": {
+      "correct": 4,
+      "total": 6
+    },
+    "fields": {
+      "need": true,
+      "need_evidence": true,
+      "difficulty": true,
+      "difficulty_evidence": true,
+      "resolution": true,
+      "resolution_evidence": false,
+      "positive_evaluation": true,
+      "positive_evaluation_evidence": true,
+      "negative_evaluation": true,
+      "negative_evaluation_evidence": true,
+      "transfer_reason": true,
+      "transfer_reason_evidence": false
+    },
+    "interpretation": "Agreement with this illustrative, locally reviewed answer key; independent from structural validation."
+  },
+  "error": null,
+  "artifactPrefix": "benchmark-2026-10-05T00-41-03-474Z-5f192784.jev.CN-SIM-0006"
+}

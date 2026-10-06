@@ -1,0 +1,2669 @@
+{
+  "version": "atomic-v1-reviewed-part2",
+  "dataset_frozen_at": "2026-10-05T00:35:05.425543+00:00",
+  "dataset_sha256": "f8a18bb13af40ca15ff99455eb604e292f4ab3facc18f0c2f96ff5fff9635b41",
+  "prepared_before_provider_calls": true,
+  "scoring": {
+    "categories": "Six independent atomic categories; strict admissible IDs.",
+    "evidence": "Six independent single-message selections.",
+    "resolution_interpretation": "Último resultado explicitamente relatado pelo cliente; pode ser anterior à ação mais recente do agente. Não é verificação do estado atual."
+  },
+  "cases": [
+    {
+      "id": "CN-SIM-0026",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "document"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: document.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0026-M002"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "portal_failure"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: portal_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0026-M002",
+            "CN-SIM-0026-M008",
+            "CN-SIM-0026-M010"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "resolved"
+          ],
+          "justification": "Cliente confirma explicitamente conclusão do pedido principal, sem reversão posterior.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0026-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0026-M018"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "process_failure"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: process_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0026-M010"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": []
+    },
+    {
+      "id": "CN-SIM-0027",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "document"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: document. Nota de revisão: A prioridade é identificar/obter a nota fiscal correta, não abrir uma garantia. O elogio posterior não confirma que o arquivo foi identificado.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0027-M003",
+            "CN-SIM-0027-M009",
+            "CN-SIM-0027-M013"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "unclear_guidance"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: unclear_guidance. Nota de revisão: A prioridade é identificar/obter a nota fiscal correta, não abrir uma garantia. O elogio posterior não confirma que o arquivo foi identificado.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0027-M013"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: A prioridade é identificar/obter a nota fiscal correta, não abrir uma garantia. O elogio posterior não confirma que o arquivo foi identificado.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0027-M013"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0027-M015"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "missing_capability"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: missing_capability.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0027-M009"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": [
+        "A prioridade é identificar/obter a nota fiscal correta, não abrir uma garantia. O elogio posterior não confirma que o arquivo foi identificado."
+      ]
+    },
+    {
+      "id": "CN-SIM-0028",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "refund"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: refund.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0028-M003",
+            "CN-SIM-0028-M021"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "delay"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: delay.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0028-M003",
+            "CN-SIM-0028-M021"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0028-M021"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0028-M023"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz crítica avaliativa explícita.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0028-M012"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "process_failure"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: process_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0028-M013"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": []
+    },
+    {
+      "id": "CN-SIM-0029",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "billing"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: billing. Nota de revisão: Último resultado explícito do cliente é anterior à ação do agente: as duas cobranças estavam confirmadas. O estorno declarado apenas pelo agente não altera esse último relato. Rótulo unresolved descreve último resultado relatado, não estado atual verificado.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0029-M002",
+            "CN-SIM-0029-M006"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "billing_dispute"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: billing_dispute. Nota de revisão: Último resultado explícito do cliente é anterior à ação do agente: as duas cobranças estavam confirmadas. O estorno declarado apenas pelo agente não altera esse último relato. Rótulo unresolved descreve último resultado relatado, não estado atual verificado.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0029-M002",
+            "CN-SIM-0029-M006"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: Último resultado explícito do cliente é anterior à ação do agente: as duas cobranças estavam confirmadas. O estorno declarado apenas pelo agente não altera esse último relato. Rótulo unresolved descreve último resultado relatado, não estado atual verificado.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0029-M006"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "not_transferred"
+          ],
+          "justification": "Não há anúncio ou execução de transferência; reengajamento no mesmo atendimento não é transferência.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        }
+      },
+      "review_notes": [
+        "Último resultado explícito do cliente é anterior à ação do agente: as duas cobranças estavam confirmadas. O estorno declarado apenas pelo agente não altera esse último relato. Rótulo unresolved descreve último resultado relatado, não estado atual verificado."
+      ]
+    },
+    {
+      "id": "CN-SIM-0030",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "cancellation"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: cancellation. Nota de revisão: O cliente afirma após o agente que o pedido continua aberto. M018, embora parte de mensagem quebrada, afirma diretamente esse estado; a declaração de sucesso do operador não a supera.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0030-M003",
+            "CN-SIM-0030-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "portal_failure"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: portal_failure. Nota de revisão: O cliente afirma após o agente que o pedido continua aberto. M018, embora parte de mensagem quebrada, afirma diretamente esse estado; a declaração de sucesso do operador não a supera.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0030-M003",
+            "CN-SIM-0030-M008",
+            "CN-SIM-0030-M018"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: O cliente afirma após o agente que o pedido continua aberto. M018, embora parte de mensagem quebrada, afirma diretamente esse estado; a declaração de sucesso do operador não a supera.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0030-M018"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "access_restriction"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: access_restriction.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0030-M011"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": [
+        "O cliente afirma após o agente que o pedido continua aberto. M018, embora parte de mensagem quebrada, afirma diretamente esse estado; a declaração de sucesso do operador não a supera."
+      ]
+    },
+    {
+      "id": "CN-SIM-0031",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "profile"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: profile. Nota de revisão: M006 é o último relato explícito de estado (telefone antigo ainda aparece), anterior à orientação. M012 é intenção de conferir depois e não estabelece um novo resultado. unresolved não significa verificação do estado atual após a orientação.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0031-M002"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "account_data"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: account_data. Nota de revisão: M006 é o último relato explícito de estado (telefone antigo ainda aparece), anterior à orientação. M012 é intenção de conferir depois e não estabelece um novo resultado. unresolved não significa verificação do estado atual após a orientação.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0031-M002",
+            "CN-SIM-0031-M006"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: M006 é o último relato explícito de estado (telefone antigo ainda aparece), anterior à orientação. M012 é intenção de conferir depois e não estabelece um novo resultado. unresolved não significa verificação do estado atual após a orientação.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0031-M006"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "missing_capability"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: missing_capability.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0031-M008"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": [
+        "M006 é o último relato explícito de estado (telefone antigo ainda aparece), anterior à orientação. M012 é intenção de conferir depois e não estabelece um novo resultado. unresolved não significa verificação do estado atual após a orientação."
+      ]
+    },
+    {
+      "id": "CN-SIM-0032",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "exchange"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: exchange.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0032-M003",
+            "CN-SIM-0032-M015",
+            "CN-SIM-0032-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "product_issue"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: product_issue.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0032-M003",
+            "CN-SIM-0032-M007"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "resolved"
+          ],
+          "justification": "Cliente confirma explicitamente conclusão do pedido principal, sem reversão posterior.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0032-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0032-M018"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "customer_request"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: customer_request.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0032-M008",
+            "CN-SIM-0032-M010"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": []
+    },
+    {
+      "id": "CN-SIM-0033",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "delivery"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: delivery. Nota de revisão: Item ausente implica completar o recebimento do pedido (delivery), não substituição de um item recebido. A dificuldade product_issue inclui produto/pedido incompleto.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0033-M007",
+            "CN-SIM-0033-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "product_issue"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: product_issue. Nota de revisão: Item ausente implica completar o recebimento do pedido (delivery), não substituição de um item recebido. A dificuldade product_issue inclui produto/pedido incompleto.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0033-M003",
+            "CN-SIM-0033-M007",
+            "CN-SIM-0033-M012",
+            "CN-SIM-0033-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: Item ausente implica completar o recebimento do pedido (delivery), não substituição de um item recebido. A dificuldade product_issue inclui produto/pedido incompleto.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0033-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz crítica avaliativa explícita.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0033-M011"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "process_failure"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: process_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0033-M012"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": [
+        "Item ausente implica completar o recebimento do pedido (delivery), não substituição de um item recebido. A dificuldade product_issue inclui produto/pedido incompleto."
+      ]
+    },
+    {
+      "id": "CN-SIM-0034",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "warranty"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: warranty. Nota de revisão: O cliente pede abertura da garantia e informa defeito, mas não informa se o registro da garantia foi concluído ou permaneceu bloqueado. O defeito não prova o resultado da abertura da garantia. Silêncio não determina resolução.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0034-M002"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "product_issue"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: product_issue. Nota de revisão: O cliente pede abertura da garantia e informa defeito, mas não informa se o registro da garantia foi concluído ou permaneceu bloqueado. O defeito não prova o resultado da abertura da garantia. Silêncio não determina resolução.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0034-M002"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Cliente não estabelece explicitamente o resultado do pedido principal. Nota de revisão: O cliente pede abertura da garantia e informa defeito, mas não informa se o registro da garantia foi concluído ou permaneceu bloqueado. O defeito não prova o resultado da abertura da garantia. Silêncio não determina resolução.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "not_transferred"
+          ],
+          "justification": "Não há anúncio ou execução de transferência; reengajamento no mesmo atendimento não é transferência.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        }
+      },
+      "review_notes": [
+        "O cliente pede abertura da garantia e informa defeito, mas não informa se o registro da garantia foi concluído ou permaneceu bloqueado. O defeito não prova o resultado da abertura da garantia. Silêncio não determina resolução."
+      ]
+    },
+    {
+      "id": "CN-SIM-0035",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "warranty"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: warranty.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0035-M002",
+            "CN-SIM-0035-M007",
+            "CN-SIM-0035-M009",
+            "CN-SIM-0035-M013"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "restricted_access"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: restricted_access.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0035-M002",
+            "CN-SIM-0035-M007"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "resolved"
+          ],
+          "justification": "Cliente confirma explicitamente conclusão do pedido principal, sem reversão posterior.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0035-M013"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0035-M014"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "not_transferred"
+          ],
+          "justification": "Não há anúncio ou execução de transferência; reengajamento no mesmo atendimento não é transferência.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        }
+      },
+      "review_notes": []
+    },
+    {
+      "id": "CN-SIM-0036",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "billing"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: billing. Nota de revisão: O último detalhamento do obstáculo é falta de explicação dos valores em lugares diferentes (unclear_guidance), sem acusação explícita de cobrança indevida. M019 estabelece entendimento do desconto; M018 sozinho é incompleto e não foi aceito como evidência.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0036-M003",
+            "CN-SIM-0036-M017",
+            "CN-SIM-0036-M019"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "unclear_guidance"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: unclear_guidance. Nota de revisão: O último detalhamento do obstáculo é falta de explicação dos valores em lugares diferentes (unclear_guidance), sem acusação explícita de cobrança indevida. M019 estabelece entendimento do desconto; M018 sozinho é incompleto e não foi aceito como evidência.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0036-M009"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "resolved"
+          ],
+          "justification": "Cliente confirma explicitamente conclusão do pedido principal, sem reversão posterior. Nota de revisão: O último detalhamento do obstáculo é falta de explicação dos valores em lugares diferentes (unclear_guidance), sem acusação explícita de cobrança indevida. M019 estabelece entendimento do desconto; M018 sozinho é incompleto e não foi aceito como evidência.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0036-M019"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0036-M021"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "process_failure"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: process_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0036-M012"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": [
+        "O último detalhamento do obstáculo é falta de explicação dos valores em lugares diferentes (unclear_guidance), sem acusação explícita de cobrança indevida. M019 estabelece entendimento do desconto; M018 sozinho é incompleto e não foi aceito como evidência."
+      ]
+    },
+    {
+      "id": "CN-SIM-0037",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "cancellation"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: cancellation. Nota de revisão: Assinatura ativa relatada pelo cliente após declaração de cancelamento do agente: unresolved. Transferência para retomar cancelamento parado é process_failure; dificuldade do cliente é atraso.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0037-M002",
+            "CN-SIM-0037-M006",
+            "CN-SIM-0037-M015"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "delay"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: delay. Nota de revisão: Assinatura ativa relatada pelo cliente após declaração de cancelamento do agente: unresolved. Transferência para retomar cancelamento parado é process_failure; dificuldade do cliente é atraso.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0037-M002",
+            "CN-SIM-0037-M011"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: Assinatura ativa relatada pelo cliente após declaração de cancelamento do agente: unresolved. Transferência para retomar cancelamento parado é process_failure; dificuldade do cliente é atraso.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0037-M015"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz crítica avaliativa explícita.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0037-M010"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "process_failure"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: process_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0037-M011"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": [
+        "Assinatura ativa relatada pelo cliente após declaração de cancelamento do agente: unresolved. Transferência para retomar cancelamento parado é process_failure; dificuldade do cliente é atraso."
+      ]
+    },
+    {
+      "id": "CN-SIM-0038",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "profile"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: profile.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0038-M002",
+            "CN-SIM-0038-M011",
+            "CN-SIM-0038-M016",
+            "CN-SIM-0038-M017"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "restricted_access"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: restricted_access.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0038-M002",
+            "CN-SIM-0038-M006",
+            "CN-SIM-0038-M011"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "resolved"
+          ],
+          "justification": "Cliente confirma explicitamente conclusão do pedido principal, sem reversão posterior.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0038-M017"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz crítica avaliativa explícita.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0038-M010"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "access_restriction"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: access_restriction.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0038-M011"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": []
+    },
+    {
+      "id": "CN-SIM-0039",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "document"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: document. Nota de revisão: Manual de montagem digital conta como other document no critério document. Pedido rotineiro sem obstáculo explícito recebe none; dizer que produto está inteiro não afirma ausência de todo obstáculo, por isso difficulty_evidence=insufficient. M016 confirma download completo; M017 complementa conteúdo, mas não é a última mensagem que diretamente confirma a conclusão.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0039-M003",
+            "CN-SIM-0039-M007",
+            "CN-SIM-0039-M015",
+            "CN-SIM-0039-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "none"
+          ],
+          "justification": "Pedido rotineiro legível sem obstáculo declarado. Nota de revisão: Manual de montagem digital conta como other document no critério document. Pedido rotineiro sem obstáculo explícito recebe none; dizer que produto está inteiro não afirma ausência de todo obstáculo, por isso difficulty_evidence=insufficient. M016 confirma download completo; M017 complementa conteúdo, mas não é a última mensagem que diretamente confirma a conclusão.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "resolution": {
+          "acceptable": [
+            "resolved"
+          ],
+          "justification": "Cliente confirma explicitamente conclusão do pedido principal, sem reversão posterior. Nota de revisão: Manual de montagem digital conta como other document no critério document. Pedido rotineiro sem obstáculo explícito recebe none; dizer que produto está inteiro não afirma ausência de todo obstáculo, por isso difficulty_evidence=insufficient. M016 confirma download completo; M017 complementa conteúdo, mas não é a última mensagem que diretamente confirma a conclusão.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0039-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0039-M019"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz crítica avaliativa explícita.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0039-M011"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "customer_request"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: customer_request.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0039-M007",
+            "CN-SIM-0039-M012"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": [
+        "Manual de montagem digital conta como other document no critério document. Pedido rotineiro sem obstáculo explícito recebe none; dizer que produto está inteiro não afirma ausência de todo obstáculo, por isso difficulty_evidence=insufficient. M016 confirma download completo; M017 complementa conteúdo, mas não é a última mensagem que diretamente confirma a conclusão."
+      ]
+    },
+    {
+      "id": "CN-SIM-0040",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "refund"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: refund. Nota de revisão: Conversão rotineira de saldo em reembolso sem obstáculo declarado: none, sem evidência direta de ausência. O cliente não confirma o resultado após a conversão declarada pelo agente; insufficient. Pedido inicial de reembolso, por si, não afirma tentativa malsucedida.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0040-M003",
+            "CN-SIM-0040-M009",
+            "CN-SIM-0040-M011"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "none"
+          ],
+          "justification": "Pedido rotineiro legível sem obstáculo declarado. Nota de revisão: Conversão rotineira de saldo em reembolso sem obstáculo declarado: none, sem evidência direta de ausência. O cliente não confirma o resultado após a conversão declarada pelo agente; insufficient. Pedido inicial de reembolso, por si, não afirma tentativa malsucedida.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "resolution": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Cliente não estabelece explicitamente o resultado do pedido principal. Nota de revisão: Conversão rotineira de saldo em reembolso sem obstáculo declarado: none, sem evidência direta de ausência. O cliente não confirma o resultado após a conversão declarada pelo agente; insufficient. Pedido inicial de reembolso, por si, não afirma tentativa malsucedida.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "not_transferred"
+          ],
+          "justification": "Não há anúncio ou execução de transferência; reengajamento no mesmo atendimento não é transferência.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        }
+      },
+      "review_notes": [
+        "Conversão rotineira de saldo em reembolso sem obstáculo declarado: none, sem evidência direta de ausência. O cliente não confirma o resultado após a conversão declarada pelo agente; insufficient. Pedido inicial de reembolso, por si, não afirma tentativa malsucedida."
+      ]
+    },
+    {
+      "id": "CN-SIM-0041",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "exchange"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: exchange.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0041-M002",
+            "CN-SIM-0041-M008",
+            "CN-SIM-0041-M011",
+            "CN-SIM-0041-M012"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "portal_failure"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: portal_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0041-M002",
+            "CN-SIM-0041-M006",
+            "CN-SIM-0041-M008",
+            "CN-SIM-0041-M012"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0041-M012"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0041-M014"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "process_failure"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: process_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0041-M008"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": []
+    },
+    {
+      "id": "CN-SIM-0042",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "delivery"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: delivery. Nota de revisão: Mensagens quebradas não foram concatenadas como uma única opção de evidência. M022 afirma diretamente que continua esperando o casaco; M013 explicita entrega atrasada.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0042-M003",
+            "CN-SIM-0042-M007",
+            "CN-SIM-0042-M021",
+            "CN-SIM-0042-M022"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "delay"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: delay. Nota de revisão: Mensagens quebradas não foram concatenadas como uma única opção de evidência. M022 afirma diretamente que continua esperando o casaco; M013 explicita entrega atrasada.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0042-M013",
+            "CN-SIM-0042-M021",
+            "CN-SIM-0042-M022"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: Mensagens quebradas não foram concatenadas como uma única opção de evidência. M022 afirma diretamente que continua esperando o casaco; M013 explicita entrega atrasada.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0042-M022"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0042-M024"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz crítica avaliativa explícita.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0042-M012"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "process_failure"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: process_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0042-M013"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": [
+        "Mensagens quebradas não foram concatenadas como uma única opção de evidência. M022 afirma diretamente que continua esperando o casaco; M013 explicita entrega atrasada."
+      ]
+    },
+    {
+      "id": "CN-SIM-0043",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "delivery"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: delivery. Nota de revisão: Dúvida de fronteira: o obstáculo explicitamente diagnosticado é baixa incorreta de entrega (other), não defeito de produto, falha do portal ou prazo de entrega explicitamente excedido. Não se aceita delay apenas por pacote não recebido. M006 é estado anterior à reposição do agente: último relato do cliente, sem confirmação posterior.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0043-M002",
+            "CN-SIM-0043-M006"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "other"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: other. Nota de revisão: Dúvida de fronteira: o obstáculo explicitamente diagnosticado é baixa incorreta de entrega (other), não defeito de produto, falha do portal ou prazo de entrega explicitamente excedido. Não se aceita delay apenas por pacote não recebido. M006 é estado anterior à reposição do agente: último relato do cliente, sem confirmação posterior.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0043-M002",
+            "CN-SIM-0043-M008"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: Dúvida de fronteira: o obstáculo explicitamente diagnosticado é baixa incorreta de entrega (other), não defeito de produto, falha do portal ou prazo de entrega explicitamente excedido. Não se aceita delay apenas por pacote não recebido. M006 é estado anterior à reposição do agente: último relato do cliente, sem confirmação posterior.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0043-M006"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "not_transferred"
+          ],
+          "justification": "Não há anúncio ou execução de transferência; reengajamento no mesmo atendimento não é transferência.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        }
+      },
+      "review_notes": [
+        "Dúvida de fronteira: o obstáculo explicitamente diagnosticado é baixa incorreta de entrega (other), não defeito de produto, falha do portal ou prazo de entrega explicitamente excedido. Não se aceita delay apenas por pacote não recebido. M006 é estado anterior à reposição do agente: último relato do cliente, sem confirmação posterior."
+      ]
+    },
+    {
+      "id": "CN-SIM-0044",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "exchange"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: exchange. Nota de revisão: M017 diz explicitamente que não consegue registrar a troca, depois da liberação declarada pelo operador. unresolved; barreira é autorização, não falha técnica.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0044-M003",
+            "CN-SIM-0044-M015",
+            "CN-SIM-0044-M017"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "restricted_access"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: restricted_access. Nota de revisão: M017 diz explicitamente que não consegue registrar a troca, depois da liberação declarada pelo operador. unresolved; barreira é autorização, não falha técnica.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0044-M003",
+            "CN-SIM-0044-M008",
+            "CN-SIM-0044-M010",
+            "CN-SIM-0044-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: M017 diz explicitamente que não consegue registrar a troca, depois da liberação declarada pelo operador. unresolved; barreira é autorização, não falha técnica.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0044-M017"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "access_restriction"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: access_restriction.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0044-M010"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": [
+        "M017 diz explicitamente que não consegue registrar a troca, depois da liberação declarada pelo operador. unresolved; barreira é autorização, não falha técnica."
+      ]
+    },
+    {
+      "id": "CN-SIM-0045",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "exchange"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: exchange. Nota de revisão: Último resultado explícito é coleta atrasada em M003, anterior ao reagendamento do agente. A intenção de tentar depois não confirma êxito nem uma nova falha. unresolved descreve último relato, não estado atual verificado.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0045-M002",
+            "CN-SIM-0045-M003",
+            "CN-SIM-0045-M010"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "delay"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: delay. Nota de revisão: Último resultado explícito é coleta atrasada em M003, anterior ao reagendamento do agente. A intenção de tentar depois não confirma êxito nem uma nova falha. unresolved descreve último relato, não estado atual verificado.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0045-M003",
+            "CN-SIM-0045-M008"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: Último resultado explícito é coleta atrasada em M003, anterior ao reagendamento do agente. A intenção de tentar depois não confirma êxito nem uma nova falha. unresolved descreve último relato, não estado atual verificado.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0045-M003"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "process_failure"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: process_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0045-M010"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": [
+        "Último resultado explícito é coleta atrasada em M003, anterior ao reagendamento do agente. A intenção de tentar depois não confirma êxito nem uma nova falha. unresolved descreve último relato, não estado atual verificado."
+      ]
+    },
+    {
+      "id": "CN-SIM-0046",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "document"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: document.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0046-M002",
+            "CN-SIM-0046-M006",
+            "CN-SIM-0046-M013",
+            "CN-SIM-0046-M014"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "portal_failure"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: portal_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0046-M002",
+            "CN-SIM-0046-M006",
+            "CN-SIM-0046-M008"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "resolved"
+          ],
+          "justification": "Cliente confirma explicitamente conclusão do pedido principal, sem reversão posterior.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0046-M014"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0046-M016"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "process_failure"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: process_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0046-M008"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": []
+    },
+    {
+      "id": "CN-SIM-0047",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "document"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: document.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0047-M002",
+            "CN-SIM-0047-M011",
+            "CN-SIM-0047-M014",
+            "CN-SIM-0047-M015"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "unclear_guidance"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: unclear_guidance.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0047-M006"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0047-M015"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz crítica avaliativa explícita.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0047-M010"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "missing_capability"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: missing_capability.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0047-M011"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": []
+    },
+    {
+      "id": "CN-SIM-0048",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "refund"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: refund. Nota de revisão: M003 explicita prazo do reembolso excedido; M004 explicita que não entrou na conta. Silêncio posterior não cria resolução nem avaliação negativa. Preserva-se último resultado explícito unresolved.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0048-M003"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "delay"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: delay. Nota de revisão: M003 explicita prazo do reembolso excedido; M004 explicita que não entrou na conta. Silêncio posterior não cria resolução nem avaliação negativa. Preserva-se último resultado explícito unresolved.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0048-M003"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "unresolved"
+          ],
+          "justification": "Último resultado explicitamente relatado pelo cliente indica pedido ou problema ainda pendente; ação ou êxito declarados pelo agente não o substituem. Nota de revisão: M003 explicita prazo do reembolso excedido; M004 explicita que não entrou na conta. Silêncio posterior não cria resolução nem avaliação negativa. Preserva-se último resultado explícito unresolved.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0048-M004"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem avaliação positiva explícita; cordialidade e confirmação factual não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "not_transferred"
+          ],
+          "justification": "Não há anúncio ou execução de transferência; reengajamento no mesmo atendimento não é transferência.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        }
+      },
+      "review_notes": [
+        "M003 explicita prazo do reembolso excedido; M004 explicita que não entrou na conta. Silêncio posterior não cria resolução nem avaliação negativa. Preserva-se último resultado explícito unresolved."
+      ]
+    },
+    {
+      "id": "CN-SIM-0049",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "billing"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: billing.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0049-M002",
+            "CN-SIM-0049-M006"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "billing_dispute"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: billing_dispute.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0049-M002",
+            "CN-SIM-0049-M006"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "resolved"
+          ],
+          "justification": "Cliente confirma explicitamente conclusão do pedido principal, sem reversão posterior.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0049-M012"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0049-M013"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "not_transferred"
+          ],
+          "justification": "Não há anúncio ou execução de transferência; reengajamento no mesmo atendimento não é transferência.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        }
+      },
+      "review_notes": []
+    },
+    {
+      "id": "CN-SIM-0050",
+      "expected": {
+        "need": {
+          "acceptable": [
+            "cancellation"
+          ],
+          "justification": "Pedido principal explicitado no diálogo: cancellation.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "need_evidence": {
+          "acceptable": [
+            "CN-SIM-0050-M002",
+            "CN-SIM-0050-M014",
+            "CN-SIM-0050-M015"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty": {
+          "acceptable": [
+            "portal_failure"
+          ],
+          "justification": "Obstáculo principal explicitado no diálogo: portal_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "difficulty_evidence": {
+          "acceptable": [
+            "CN-SIM-0050-M002",
+            "CN-SIM-0050-M007",
+            "CN-SIM-0050-M009"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution": {
+          "acceptable": [
+            "resolved"
+          ],
+          "justification": "Cliente confirma explicitamente conclusão do pedido principal, sem reversão posterior.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "resolution_evidence": {
+          "acceptable": [
+            "CN-SIM-0050-M015"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation": {
+          "acceptable": [
+            "present"
+          ],
+          "justification": "Cliente faz elogio explícito.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "positive_evaluation_evidence": {
+          "acceptable": [
+            "CN-SIM-0050-M017"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation": {
+          "acceptable": [
+            "absent"
+          ],
+          "justification": "Conversa legível sem crítica avaliativa explícita; falhas e pendências factuais não contam.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "negative_evaluation_evidence": {
+          "acceptable": [
+            "insufficient"
+          ],
+          "justification": "Nenhuma mensagem elegível isolada fornece evidência direta; ausência no diálogo não cria uma mensagem de evidência.",
+          "uncertainty": true,
+          "abstain": true
+        },
+        "transfer_reason": {
+          "acceptable": [
+            "process_failure"
+          ],
+          "justification": "Motivo explícito da última transferência com razão declarada: process_failure.",
+          "uncertainty": false,
+          "abstain": false
+        },
+        "transfer_reason_evidence": {
+          "acceptable": [
+            "CN-SIM-0050-M009"
+          ],
+          "justification": "Mensagem(s) que diretamente sustentam este julgamento, segundo elegibilidade e regra de uma mensagem.",
+          "uncertainty": false,
+          "abstain": false
+        }
+      },
+      "review_notes": []
+    }
+  ],
+  "review_method": "Revisão humana assistida sem API, usando apenas dataset.json e questions.json atomic-v1; scenario-reference não consultado."
+}

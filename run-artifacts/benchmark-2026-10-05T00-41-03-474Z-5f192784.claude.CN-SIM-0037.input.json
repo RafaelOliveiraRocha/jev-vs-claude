@@ -1,0 +1,221 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "max_tokens": 384,
+  "system": "Analyze every message in the supplied dialogue. Answer every question independently from its instructions and criteria. For each question choose exactly one criterion ID. Submit the twelve selected IDs with classify_dialogue. Follow evidence author restrictions. Do not add explanations or probabilities.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "{\"state\":{\"messages\":[{\"id\":\"CN-SIM-0037-M001\",\"author\":\"agent\",\"actor_type\":\"bot\",\"name\":\"Assistente Nimbo\",\"time\":\"2026-09-02T09:37:41-03:00\",\"text\":\"Oi! Vamos ver o que aconteceu com seu pedido?\"},{\"id\":\"CN-SIM-0037-M002\",\"author\":\"customer\",\"actor_type\":\"customer\",\"name\":\"Otávio\",\"time\":\"2026-09-02T09:38:58-03:00\",\"text\":\"Quero concluir o cancelamento que pedi em 30/08. O prazo passou e nada mudou na conta.\"},{\"id\":\"CN-SIM-0037-M003\",\"author\":\"agent\",\"actor_type\":\"bot\",\"name\":\"Assistente Nimbo\",\"time\":\"2026-09-02T09:39:21-03:00\",\"text\":\"Me passa o código que veio na confirmação da compra?\"},{\"id\":\"CN-SIM-0037-M004\",\"author\":\"customer\",\"actor_type\":\"customer\",\"name\":\"Otávio\",\"time\":\"2026-09-02T09:40:16-03:00\",\"text\":\"achei: CN-70037\"},{\"id\":\"CN-SIM-0037-M005\",\"author\":\"agent\",\"actor_type\":\"bot\",\"name\":\"Assistente Nimbo\",\"time\":\"2026-09-02T09:41:09-03:00\",\"text\":\"Vou olhar por aqui. Pode me contar mais um detalhe?\"},{\"id\":\"CN-SIM-0037-M006\",\"author\":\"customer\",\"actor_type\":\"customer\",\"name\":\"Otávio\",\"time\":\"2026-09-02T09:42:18-03:00\",\"text\":\"Não quero pausar o plano. Pedi o encerramento e continuo vendo a assinatura ativa.\"},{\"id\":\"CN-SIM-0037-M007\",\"author\":\"agent\",\"actor_type\":\"bot\",\"name\":\"Assistente Nimbo\",\"time\":\"2026-09-02T09:43:43-03:00\",\"text\":\"Certo, vou conferir o que aparece por aqui.\"},{\"id\":\"CN-SIM-0037-M008\",\"author\":\"agent\",\"actor_type\":\"bot\",\"name\":\"Assistente Nimbo\",\"time\":\"2026-09-02T09:45:05-03:00\",\"text\":\"Qual é o número do pedido?\"},{\"id\":\"CN-SIM-0037-M009\",\"author\":\"customer\",\"actor_type\":\"customer\",\"name\":\"Otávio\",\"time\":\"2026-09-02T09:46:12-03:00\",\"text\":\"já mandei o número acima\"},{\"id\":\"CN-SIM-0037-M010\",\"author\":\"customer\",\"actor_type\":\"customer\",\"name\":\"Otávio\",\"time\":\"2026-09-02T09:47:15-03:00\",\"text\":\"não achei essa orientação boa, ficou tudo muito enrolado\"},{\"id\":\"CN-SIM-0037-M011\",\"author\":\"agent\",\"actor_type\":\"bot\",\"name\":\"Assistente Nimbo\",\"time\":\"2026-09-02T09:48:40-03:00\",\"text\":\"Vou passar à equipe responsável para retomar o cancelamento que ficou parado.\"},{\"id\":\"CN-SIM-0037-M012\",\"author\":\"agent\",\"actor_type\":\"human\",\"name\":\"Cris\",\"time\":\"2026-09-02T10:03:39-03:00\",\"text\":\"Oi, Otávio. Aqui é Cris. Vou continuar por aqui com você.\"},{\"id\":\"CN-SIM-0037-M013\",\"author\":\"customer\",\"actor_type\":\"customer\",\"name\":\"Otávio\",\"time\":\"2026-09-02T10:03:54-03:00\",\"text\":\"certo\"},{\"id\":\"CN-SIM-0037-M014\",\"author\":\"agent\",\"actor_type\":\"human\",\"name\":\"Cris\",\"time\":\"2026-09-02T10:04:55-03:00\",\"text\":\"A assinatura já foi cancelada e não há próximo ciclo programado. Anexei a confirmação.\"},{\"id\":\"CN-SIM-0037-M015\",\"author\":\"customer\",\"actor_type\":\"customer\",\"name\":\"Otávio\",\"time\":\"2026-09-02T10:05:27-03:00\",\"text\":\"Ainda consta plano ativo na minha conta, apesar do protocolo de cancelamento.\"},{\"id\":\"CN-SIM-0037-M016\",\"author\":\"agent\",\"actor_type\":\"human\",\"name\":\"Cris\",\"time\":\"2026-09-02T10:06:45-03:00\",\"text\":\"Certo. Esse pedido continua aguardando a próxima etapa. Vou manter o registro do que você informou.\"},{\"id\":\"CN-SIM-0037-M017\",\"author\":\"customer\",\"actor_type\":\"customer\",\"name\":\"Otávio\",\"time\":\"2026-09-02T10:07:36-03:00\",\"text\":\"certo, fico com esse registro\"},{\"id\":\"CN-SIM-0037-M018\",\"author\":\"agent\",\"actor_type\":\"human\",\"name\":\"Cris\",\"time\":\"2026-09-02T10:07:55-03:00\",\"text\":\"O histórico fica registrado para você retomar se precisar.\"}]},\"questions\":{\"need\":{\"type\":\"choice\",\"instructions\":\"Choose the customer's primary concrete request. Use the final explicit priority if requests change; if equally important requests cannot be reduced to one, choose insufficient.\",\"criteria\":{\"exchange\":\"Replace or exchange an item, including size or model changes.\",\"delivery\":\"Locate, receive, or change delivery of an order; includes shipment status and delivery timing.\",\"refund\":\"Return money already paid, including a refund after cancellation. A charge question alone is not a refund request.\",\"document\":\"Obtain, correct, or access an invoice, receipt, certificate, or other document.\",\"billing\":\"Understand or correct a charge, payment, installment, duplicate debit, or payment method without explicitly requesting money back.\",\"cancellation\":\"Cancel an order, service, or subscription when cancellation itself is the primary request.\",\"profile\":\"Create, recover, access, or change an account or its personal data.\",\"warranty\":\"Obtain warranty coverage, warranty repair, or a warranty claim rather than a direct exchange request.\",\"other\":\"A clear concrete request outside all listed types.\",\"insufficient\":\"No concrete customer request is stated, or the primary request cannot be determined.\"}},\"need_evidence\":{\"type\":\"choice\",\"instructions\":\"Choose one message that explicitly identifies the customer's primary concrete request. Prefer the customer's explicit priority over an agent's assumption. If no single eligible message establishes the primary request, choose insufficient.\",\"criteria\":{\"CN-SIM-0037-M001\":\"state.messages[0] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M002\":\"state.messages[1] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M003\":\"state.messages[2] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M004\":\"state.messages[3] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M005\":\"state.messages[4] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M006\":\"state.messages[5] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M007\":\"state.messages[6] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M008\":\"state.messages[7] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M009\":\"state.messages[8] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M010\":\"state.messages[9] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M011\":\"state.messages[10] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M012\":\"state.messages[11] (author=agent, actor_type=human)\",\"CN-SIM-0037-M013\":\"state.messages[12] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M014\":\"state.messages[13] (author=agent, actor_type=human)\",\"CN-SIM-0037-M015\":\"state.messages[14] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M016\":\"state.messages[15] (author=agent, actor_type=human)\",\"CN-SIM-0037-M017\":\"state.messages[16] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M018\":\"state.messages[17] (author=agent, actor_type=human)\",\"insufficient\":\"No single permitted message supports this classification; evidence is insufficient.\"}},\"difficulty\":{\"type\":\"choice\",\"instructions\":\"Choose the primary stated obstacle to completing the customer's request. Use the final explicit priority; if competing obstacles cannot be reduced to one, choose insufficient. Do not infer an obstacle from an agent apology alone.\",\"criteria\":{\"portal_failure\":\"A website, app, link, or automated flow crashes, errors, loops, or fails to execute an intended action.\",\"unclear_guidance\":\"Instructions or next steps are missing, contradictory, confusing, or not understood; no technical or access failure is the primary obstacle.\",\"restricted_access\":\"A permission, authentication, policy, or role restriction prevents access to an action or resource.\",\"delay\":\"Waiting, an overdue deadline, an uncompleted response, or processing time is the primary obstacle.\",\"product_issue\":\"A defective, damaged, incorrect, incomplete, or unsuitable product is the primary obstacle.\",\"billing_dispute\":\"An allegedly wrong, duplicate, unrecognized, or disputed charge or payment is the primary obstacle.\",\"account_data\":\"Incorrect, missing, outdated, or mismatched account or personal data is the primary obstacle.\",\"none\":\"The readable conversation states no obstacle, or the customer explicitly states there is no difficulty. A routine request alone is not an obstacle.\",\"other\":\"A clear stated obstacle outside all listed types.\",\"insufficient\":\"The conversation is too incomplete or ambiguous to identify whether an obstacle exists or which obstacle is primary.\"}},\"difficulty_evidence\":{\"type\":\"choice\",\"instructions\":\"Choose one message that directly states the primary obstacle to completing the customer's request, or explicitly states there is no obstacle. A routine request, apology, or an absence of obstacles is not direct evidence. If no single eligible message establishes this, choose insufficient.\",\"criteria\":{\"CN-SIM-0037-M001\":\"state.messages[0] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M002\":\"state.messages[1] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M003\":\"state.messages[2] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M004\":\"state.messages[3] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M005\":\"state.messages[4] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M006\":\"state.messages[5] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M007\":\"state.messages[6] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M008\":\"state.messages[7] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M009\":\"state.messages[8] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M010\":\"state.messages[9] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M011\":\"state.messages[10] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M012\":\"state.messages[11] (author=agent, actor_type=human)\",\"CN-SIM-0037-M013\":\"state.messages[12] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M014\":\"state.messages[13] (author=agent, actor_type=human)\",\"CN-SIM-0037-M015\":\"state.messages[14] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M016\":\"state.messages[15] (author=agent, actor_type=human)\",\"CN-SIM-0037-M017\":\"state.messages[16] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M018\":\"state.messages[17] (author=agent, actor_type=human)\",\"insufficient\":\"No single permitted message supports this classification; evidence is insufficient.\"}},\"resolution\":{\"type\":\"choice\",\"instructions\":\"Determine the customer's last explicitly stated outcome for the primary request. Use customer statements only. An agent's promise, completed action, or declaration of success does not establish the customer's outcome.\",\"criteria\":{\"resolved\":\"The customer explicitly confirms the primary request is completed or the original problem no longer exists, with no later customer reversal.\",\"unresolved\":\"The customer's latest relevant statement explicitly says the primary request or original problem remains pending or unsuccessful. A later agent claim cannot override it.\",\"insufficient\":\"The customer does not explicitly establish the current outcome, or the customer's relevant outcome statements remain ambiguous or contradictory. Thanks or an evaluation alone is not outcome confirmation.\"}},\"resolution_evidence\":{\"type\":\"choice\",\"instructions\":\"Choose the customer's latest message that explicitly confirms the primary request is completed or explicitly states it remains pending or unsuccessful. Do not use an agent claim, a promise, thanks alone, or an evaluation without an outcome. If no single customer message establishes the outcome, choose insufficient.\",\"criteria\":{\"CN-SIM-0037-M002\":\"state.messages[1] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M004\":\"state.messages[3] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M006\":\"state.messages[5] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M009\":\"state.messages[8] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M010\":\"state.messages[9] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M013\":\"state.messages[12] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M015\":\"state.messages[14] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M017\":\"state.messages[16] (author=customer, actor_type=customer)\",\"insufficient\":\"No single permitted message supports this classification; evidence is insufficient.\"}},\"positive_evaluation\":{\"type\":\"choice\",\"instructions\":\"Independently detect an explicit positive customer evaluation of the experience, help, process, or result. A factual success, greeting, polite acknowledgment, or thanks alone is not an evaluation. Ignore whether the request is resolved.\",\"criteria\":{\"present\":\"The customer explicitly praises, approves, or favorably judges the experience, help, process, or result. Concrete praise attached to thanks qualifies; thanks alone does not. A qualifying positive evaluation may coexist with a negative one.\",\"absent\":\"The conversation is readable and contains no qualifying explicit positive customer evaluation. Neutral acknowledgments and factual outcomes alone belong here.\",\"insufficient\":\"Missing, truncated, ambiguous, or unintelligible customer content prevents deciding whether a qualifying positive evaluation is expressed.\"}},\"positive_evaluation_evidence\":{\"type\":\"choice\",\"instructions\":\"Choose one customer message that explicitly praises, approves, or favorably judges the experience, help, process, or result. Factual success, politeness, and thanks alone do not qualify. Do not infer positivity from resolution. If no single customer message contains qualifying positive evaluation, choose insufficient.\",\"criteria\":{\"CN-SIM-0037-M002\":\"state.messages[1] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M004\":\"state.messages[3] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M006\":\"state.messages[5] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M009\":\"state.messages[8] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M010\":\"state.messages[9] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M013\":\"state.messages[12] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M015\":\"state.messages[14] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M017\":\"state.messages[16] (author=customer, actor_type=customer)\",\"insufficient\":\"No single permitted message supports this classification; evidence is insufficient.\"}},\"negative_evaluation\":{\"type\":\"choice\",\"instructions\":\"Independently detect an explicit negative customer evaluation of the experience, help, process, or result. A factual error, defect, delay, pending request, or failure alone is not an evaluation. Ignore whether the request is resolved.\",\"criteria\":{\"present\":\"The customer explicitly criticizes, disapproves, complains evaluatively, or unfavorably judges the experience, help, process, or result. A qualifying negative evaluation may coexist with a positive one.\",\"absent\":\"The conversation is readable and contains no qualifying explicit negative customer evaluation. A factual statement that an error or pending problem exists, without an evaluative judgment, belongs here.\",\"insufficient\":\"Missing, truncated, ambiguous, or unintelligible customer content prevents deciding whether a qualifying negative evaluation is expressed.\"}},\"negative_evaluation_evidence\":{\"type\":\"choice\",\"instructions\":\"Choose one customer message that explicitly criticizes, disapproves, or unfavorably judges the experience, help, process, or result. A factual error, defect, delay, pending request, or failure alone does not qualify. Do not infer negativity from an unresolved outcome. If no single customer message contains qualifying negative evaluation, choose insufficient.\",\"criteria\":{\"CN-SIM-0037-M002\":\"state.messages[1] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M004\":\"state.messages[3] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M006\":\"state.messages[5] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M009\":\"state.messages[8] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M010\":\"state.messages[9] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M013\":\"state.messages[12] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M015\":\"state.messages[14] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M017\":\"state.messages[16] (author=customer, actor_type=customer)\",\"insufficient\":\"No single permitted message supports this classification; evidence is insufficient.\"}},\"transfer_reason\":{\"type\":\"choice\",\"instructions\":\"Choose the explicit reason for an announced or completed handoff between bot, agent, team, or channel. A handoff announcement without its reason is insufficient. If several handoffs exist, use the last handoff with an explicit reason; do not infer a reason from the customer's obstacle alone.\",\"criteria\":{\"process_failure\":\"The handoff is explicitly caused by a failed, broken, or unsuccessful process or flow.\",\"access_restriction\":\"The handoff is explicitly caused by a permission, authorization, policy, or access restriction.\",\"missing_capability\":\"The handoff is explicitly caused by the current bot, agent, team, or channel lacking a required function, expertise, or ability.\",\"customer_request\":\"The handoff is explicitly caused by the customer's request to speak with another person, team, or channel.\",\"not_transferred\":\"The readable conversation contains no announced or completed handoff, or explicitly says no handoff occurred.\",\"other\":\"A handoff occurs and its explicit reason falls outside all listed reasons.\",\"insufficient\":\"A handoff occurs without an explicit reason, or incomplete or ambiguous content prevents determining whether it occurred.\"}},\"transfer_reason_evidence\":{\"type\":\"choice\",\"instructions\":\"Choose one message that explicitly states why an announced or completed handoff occurs, using the last handoff with an explicit reason. A reason inferred only from an obstacle or a bare handoff announcement is insufficient. An explicit statement that no handoff occurred is eligible; mere absence is not evidence. Otherwise choose insufficient.\",\"criteria\":{\"CN-SIM-0037-M001\":\"state.messages[0] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M002\":\"state.messages[1] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M003\":\"state.messages[2] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M004\":\"state.messages[3] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M005\":\"state.messages[4] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M006\":\"state.messages[5] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M007\":\"state.messages[6] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M008\":\"state.messages[7] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M009\":\"state.messages[8] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M010\":\"state.messages[9] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M011\":\"state.messages[10] (author=agent, actor_type=bot)\",\"CN-SIM-0037-M012\":\"state.messages[11] (author=agent, actor_type=human)\",\"CN-SIM-0037-M013\":\"state.messages[12] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M014\":\"state.messages[13] (author=agent, actor_type=human)\",\"CN-SIM-0037-M015\":\"state.messages[14] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M016\":\"state.messages[15] (author=agent, actor_type=human)\",\"CN-SIM-0037-M017\":\"state.messages[16] (author=customer, actor_type=customer)\",\"CN-SIM-0037-M018\":\"state.messages[17] (author=agent, actor_type=human)\",\"insufficient\":\"No single permitted message supports this classification; evidence is insufficient.\"}}}}"
+    }
+  ],
+  "tools": [
+    {
+      "name": "classify_dialogue",
+      "description": "Return the twelve selected criterion IDs.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "need": {
+            "type": "string",
+            "enum": [
+              "exchange",
+              "delivery",
+              "refund",
+              "document",
+              "billing",
+              "cancellation",
+              "profile",
+              "warranty",
+              "other",
+              "insufficient"
+            ]
+          },
+          "need_evidence": {
+            "type": "string",
+            "enum": [
+              "CN-SIM-0037-M001",
+              "CN-SIM-0037-M002",
+              "CN-SIM-0037-M003",
+              "CN-SIM-0037-M004",
+              "CN-SIM-0037-M005",
+              "CN-SIM-0037-M006",
+              "CN-SIM-0037-M007",
+              "CN-SIM-0037-M008",
+              "CN-SIM-0037-M009",
+              "CN-SIM-0037-M010",
+              "CN-SIM-0037-M011",
+              "CN-SIM-0037-M012",
+              "CN-SIM-0037-M013",
+              "CN-SIM-0037-M014",
+              "CN-SIM-0037-M015",
+              "CN-SIM-0037-M016",
+              "CN-SIM-0037-M017",
+              "CN-SIM-0037-M018",
+              "insufficient"
+            ]
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": [
+              "portal_failure",
+              "unclear_guidance",
+              "restricted_access",
+              "delay",
+              "product_issue",
+              "billing_dispute",
+              "account_data",
+              "none",
+              "other",
+              "insufficient"
+            ]
+          },
+          "difficulty_evidence": {
+            "type": "string",
+            "enum": [
+              "CN-SIM-0037-M001",
+              "CN-SIM-0037-M002",
+              "CN-SIM-0037-M003",
+              "CN-SIM-0037-M004",
+              "CN-SIM-0037-M005",
+              "CN-SIM-0037-M006",
+              "CN-SIM-0037-M007",
+              "CN-SIM-0037-M008",
+              "CN-SIM-0037-M009",
+              "CN-SIM-0037-M010",
+              "CN-SIM-0037-M011",
+              "CN-SIM-0037-M012",
+              "CN-SIM-0037-M013",
+              "CN-SIM-0037-M014",
+              "CN-SIM-0037-M015",
+              "CN-SIM-0037-M016",
+              "CN-SIM-0037-M017",
+              "CN-SIM-0037-M018",
+              "insufficient"
+            ]
+          },
+          "resolution": {
+            "type": "string",
+            "enum": [
+              "resolved",
+              "unresolved",
+              "insufficient"
+            ]
+          },
+          "resolution_evidence": {
+            "type": "string",
+            "enum": [
+              "CN-SIM-0037-M002",
+              "CN-SIM-0037-M004",
+              "CN-SIM-0037-M006",
+              "CN-SIM-0037-M009",
+              "CN-SIM-0037-M010",
+              "CN-SIM-0037-M013",
+              "CN-SIM-0037-M015",
+              "CN-SIM-0037-M017",
+              "insufficient"
+            ]
+          },
+          "positive_evaluation": {
+            "type": "string",
+            "enum": [
+              "present",
+              "absent",
+              "insufficient"
+            ]
+          },
+          "positive_evaluation_evidence": {
+            "type": "string",
+            "enum": [
+              "CN-SIM-0037-M002",
+              "CN-SIM-0037-M004",
+              "CN-SIM-0037-M006",
+              "CN-SIM-0037-M009",
+              "CN-SIM-0037-M010",
+              "CN-SIM-0037-M013",
+              "CN-SIM-0037-M015",
+              "CN-SIM-0037-M017",
+              "insufficient"
+            ]
+          },
+          "negative_evaluation": {
+            "type": "string",
+            "enum": [
+              "present",
+              "absent",
+              "insufficient"
+            ]
+          },
+          "negative_evaluation_evidence": {
+            "type": "string",
+            "enum": [
+              "CN-SIM-0037-M002",
+              "CN-SIM-0037-M004",
+              "CN-SIM-0037-M006",
+              "CN-SIM-0037-M009",
+              "CN-SIM-0037-M010",
+              "CN-SIM-0037-M013",
+              "CN-SIM-0037-M015",
+              "CN-SIM-0037-M017",
+              "insufficient"
+            ]
+          },
+          "transfer_reason": {
+            "type": "string",
+            "enum": [
+              "process_failure",
+              "access_restriction",
+              "missing_capability",
+              "customer_request",
+              "not_transferred",
+              "other",
+              "insufficient"
+            ]
+          },
+          "transfer_reason_evidence": {
+            "type": "string",
+            "enum": [
+              "CN-SIM-0037-M001",
+              "CN-SIM-0037-M002",
+              "CN-SIM-0037-M003",
+              "CN-SIM-0037-M004",
+              "CN-SIM-0037-M005",
+              "CN-SIM-0037-M006",
+              "CN-SIM-0037-M007",
+              "CN-SIM-0037-M008",
+              "CN-SIM-0037-M009",
+              "CN-SIM-0037-M010",
+              "CN-SIM-0037-M011",
+              "CN-SIM-0037-M012",
+              "CN-SIM-0037-M013",
+              "CN-SIM-0037-M014",
+              "CN-SIM-0037-M015",
+              "CN-SIM-0037-M016",
+              "CN-SIM-0037-M017",
+              "CN-SIM-0037-M018",
+              "insufficient"
+            ]
+          }
+        },
+        "required": [
+          "need",
+          "need_evidence",
+          "difficulty",
+          "difficulty_evidence",
+          "resolution",
+          "resolution_evidence",
+          "positive_evaluation",
+          "positive_evaluation_evidence",
+          "negative_evaluation",
+          "negative_evaluation_evidence",
+          "transfer_reason",
+          "transfer_reason_evidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "tool_choice": {
+    "type": "tool",
+    "name": "classify_dialogue"
+  }
+}

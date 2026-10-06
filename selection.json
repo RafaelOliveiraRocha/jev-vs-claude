@@ -1,0 +1,799 @@
+{
+  "version": "reviewed-50-selection-v1",
+  "frozen_at": "2026-10-05T00:29:59.172712+00:00",
+  "selected_before_subset_api_dispatch": true,
+  "provider_results_used": false,
+  "source": {
+    "path": "/workspace/scratch/4782a3af58b2/jev-comparison/scale-1000/dataset.json",
+    "sha256": "f54c3983ca2b1484252fd72bc2bf249ef96a30e8e04bfffa801d66b544c86cd8",
+    "case_count": 1000,
+    "metadata_path": "/workspace/scratch/4782a3af58b2/jev-comparison/scale-1000/scenario-metadata.jsonl"
+  },
+  "output": {
+    "path": "/workspace/scratch/4782a3af58b2/jev-comparison/reviewed-50/dataset.json",
+    "sha256": "e904435b0586d8b784182347530f441983be501bd69e34f2ed6a8404ca7fd570",
+    "case_count": 50
+  },
+  "method": {
+    "deterministic_order": "Ascending original case ID; no random draws.",
+    "objectives": [
+      "Cover all 20 source families.",
+      "Cover all 17 source trajectory types.",
+      "Use 2 or 3 cases from each family.",
+      "Maximize distinct family-by-trajectory pairs in 50 slots.",
+      "Break feasible ties by the lexicographically smallest ascending case-ID list."
+    ],
+    "optimality": "The first 50 ascending IDs satisfy all quotas and cover 50 distinct family-by-trajectory pairs. Fifty pairs is the maximum possible in 50 slots; family and trajectory coverage also reach their source upper bounds. No later case is needed to improve any coverage objective.",
+    "selection_inputs": [
+      "Original case IDs",
+      "Family and trajectory metadata",
+      "Original message content for narrative review only"
+    ],
+    "forbidden_selection_inputs": [
+      "Provider outputs",
+      "Accuracy results",
+      "Winning cases",
+      "Provider-specific errors"
+    ],
+    "freeze_rule": "Do not replace cases after provider outputs. Any independently proved narrative inconsistency discovered before dispatch must be recorded with original message IDs and trigger a deterministic pre-dispatch reselection."
+  },
+  "case_ids": [
+    "CN-SIM-0001",
+    "CN-SIM-0002",
+    "CN-SIM-0003",
+    "CN-SIM-0004",
+    "CN-SIM-0005",
+    "CN-SIM-0006",
+    "CN-SIM-0007",
+    "CN-SIM-0008",
+    "CN-SIM-0009",
+    "CN-SIM-0010",
+    "CN-SIM-0011",
+    "CN-SIM-0012",
+    "CN-SIM-0013",
+    "CN-SIM-0014",
+    "CN-SIM-0015",
+    "CN-SIM-0016",
+    "CN-SIM-0017",
+    "CN-SIM-0018",
+    "CN-SIM-0019",
+    "CN-SIM-0020",
+    "CN-SIM-0021",
+    "CN-SIM-0022",
+    "CN-SIM-0023",
+    "CN-SIM-0024",
+    "CN-SIM-0025",
+    "CN-SIM-0026",
+    "CN-SIM-0027",
+    "CN-SIM-0028",
+    "CN-SIM-0029",
+    "CN-SIM-0030",
+    "CN-SIM-0031",
+    "CN-SIM-0032",
+    "CN-SIM-0033",
+    "CN-SIM-0034",
+    "CN-SIM-0035",
+    "CN-SIM-0036",
+    "CN-SIM-0037",
+    "CN-SIM-0038",
+    "CN-SIM-0039",
+    "CN-SIM-0040",
+    "CN-SIM-0041",
+    "CN-SIM-0042",
+    "CN-SIM-0043",
+    "CN-SIM-0044",
+    "CN-SIM-0045",
+    "CN-SIM-0046",
+    "CN-SIM-0047",
+    "CN-SIM-0048",
+    "CN-SIM-0049",
+    "CN-SIM-0050"
+  ],
+  "selected_cases": [
+    {
+      "id": "CN-SIM-0001",
+      "family": "CN01",
+      "trajectory": "resolved_positive",
+      "cutoff_at": "2026-09-06T11:16:07-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0002",
+      "family": "CN02",
+      "trajectory": "pending_negative",
+      "cutoff_at": "2026-09-06T11:27:35-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0003",
+      "family": "CN03",
+      "trajectory": "abandon_collection",
+      "cutoff_at": "2026-09-06T10:22:37-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0004",
+      "family": "CN04",
+      "trajectory": "reengagement_return_resolved",
+      "cutoff_at": "2026-09-11T09:35:32-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0005",
+      "family": "CN05",
+      "trajectory": "technical_transfer_resolved",
+      "cutoff_at": "2026-09-09T11:26:23-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0006",
+      "family": "CN06",
+      "trajectory": "repeated_attempts_pending",
+      "cutoff_at": "2026-09-07T11:36:22-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0007",
+      "family": "CN07",
+      "trajectory": "resolved_negative",
+      "cutoff_at": "2026-09-08T11:34:31-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0008",
+      "family": "CN08",
+      "trajectory": "mixed_resolved",
+      "cutoff_at": "2026-09-10T11:40:15-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0009",
+      "family": "CN09",
+      "trajectory": "abandon_after_guidance",
+      "cutoff_at": "2026-09-13T07:37:30-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0010",
+      "family": "CN10",
+      "trajectory": "customer_requests_human",
+      "cutoff_at": "2026-09-11T11:39:40-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0011",
+      "family": "CN11",
+      "trajectory": "neutral_resolved",
+      "cutoff_at": "2026-09-12T12:31:35-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0012",
+      "family": "CN12",
+      "trajectory": "order_correction_resolved",
+      "cutoff_at": "2026-09-15T11:41:43-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0013",
+      "family": "CN13",
+      "trajectory": "pending_positive",
+      "cutoff_at": "2026-09-14T11:29:22-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0014",
+      "family": "CN14",
+      "trajectory": "mixed_pending",
+      "cutoff_at": "2026-09-15T11:42:11-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0015",
+      "family": "CN15",
+      "trajectory": "reengagement_no_reply",
+      "cutoff_at": "2026-09-19T07:42:36-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0016",
+      "family": "CN16",
+      "trajectory": "restricted_transfer_pending",
+      "cutoff_at": "2026-09-17T11:35:52-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0017",
+      "family": "CN17",
+      "trajectory": "ambiguous_end",
+      "cutoff_at": "2026-09-18T11:41:54-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0018",
+      "family": "CN18",
+      "trajectory": "resolved_positive",
+      "cutoff_at": "2026-09-01T12:41:14-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0019",
+      "family": "CN19",
+      "trajectory": "pending_negative",
+      "cutoff_at": "2026-09-02T11:45:10-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0020",
+      "family": "CN20",
+      "trajectory": "abandon_collection",
+      "cutoff_at": "2026-09-05T10:41:47-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0021",
+      "family": "CN01",
+      "trajectory": "resolved_negative",
+      "cutoff_at": "2026-09-10T11:48:14-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0022",
+      "family": "CN02",
+      "trajectory": "mixed_resolved",
+      "cutoff_at": "2026-09-07T14:42:48-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0023",
+      "family": "CN03",
+      "trajectory": "abandon_after_guidance",
+      "cutoff_at": "2026-09-09T07:49:30-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0024",
+      "family": "CN04",
+      "trajectory": "customer_requests_human",
+      "cutoff_at": "2026-09-12T11:50:06-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0025",
+      "family": "CN05",
+      "trajectory": "neutral_resolved",
+      "cutoff_at": "2026-09-12T11:50:02-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0026",
+      "family": "CN06",
+      "trajectory": "order_correction_resolved",
+      "cutoff_at": "2026-09-09T11:47:39-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0027",
+      "family": "CN07",
+      "trajectory": "pending_positive",
+      "cutoff_at": "2026-09-10T11:50:23-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0028",
+      "family": "CN08",
+      "trajectory": "mixed_pending",
+      "cutoff_at": "2026-09-11T11:59:34-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0029",
+      "family": "CN09",
+      "trajectory": "reengagement_no_reply",
+      "cutoff_at": "2026-09-15T07:56:42-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0030",
+      "family": "CN10",
+      "trajectory": "restricted_transfer_pending",
+      "cutoff_at": "2026-09-13T11:56:29-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0031",
+      "family": "CN11",
+      "trajectory": "ambiguous_end",
+      "cutoff_at": "2026-09-14T11:50:16-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0032",
+      "family": "CN12",
+      "trajectory": "resolved_positive",
+      "cutoff_at": "2026-09-21T11:59:24-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0033",
+      "family": "CN13",
+      "trajectory": "pending_negative",
+      "cutoff_at": "2026-09-16T12:02:17-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0034",
+      "family": "CN14",
+      "trajectory": "abandon_collection",
+      "cutoff_at": "2026-09-19T10:52:28-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0035",
+      "family": "CN15",
+      "trajectory": "reengagement_return_resolved",
+      "cutoff_at": "2026-09-19T13:04:52-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0036",
+      "family": "CN16",
+      "trajectory": "technical_transfer_resolved",
+      "cutoff_at": "2026-09-01T13:05:47-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0037",
+      "family": "CN17",
+      "trajectory": "repeated_attempts_pending",
+      "cutoff_at": "2026-09-02T12:07:55-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0038",
+      "family": "CN18",
+      "trajectory": "resolved_negative",
+      "cutoff_at": "2026-09-03T12:00:26-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0039",
+      "family": "CN19",
+      "trajectory": "mixed_resolved",
+      "cutoff_at": "2026-09-04T13:03:21-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0040",
+      "family": "CN20",
+      "trajectory": "abandon_after_guidance",
+      "cutoff_at": "2026-09-08T08:07:22-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0041",
+      "family": "CN01",
+      "trajectory": "pending_positive",
+      "cutoff_at": "2026-09-06T12:05:01-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0042",
+      "family": "CN02",
+      "trajectory": "mixed_pending",
+      "cutoff_at": "2026-09-07T12:12:44-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0043",
+      "family": "CN03",
+      "trajectory": "reengagement_no_reply",
+      "cutoff_at": "2026-09-11T08:08:43-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0044",
+      "family": "CN04",
+      "trajectory": "restricted_transfer_pending",
+      "cutoff_at": "2026-09-09T12:01:19-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0045",
+      "family": "CN05",
+      "trajectory": "ambiguous_end",
+      "cutoff_at": "2026-09-10T12:06:56-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0046",
+      "family": "CN06",
+      "trajectory": "resolved_positive",
+      "cutoff_at": "2026-09-11T12:16:17-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0047",
+      "family": "CN07",
+      "trajectory": "pending_negative",
+      "cutoff_at": "2026-09-12T12:06:46-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0048",
+      "family": "CN08",
+      "trajectory": "abandon_collection",
+      "cutoff_at": "2026-09-15T11:09:45-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0049",
+      "family": "CN09",
+      "trajectory": "reengagement_return_resolved",
+      "cutoff_at": "2026-09-17T10:17:50-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    },
+    {
+      "id": "CN-SIM-0050",
+      "family": "CN10",
+      "trajectory": "technical_transfer_resolved",
+      "cutoff_at": "2026-09-15T13:18:37-03:00",
+      "pre_execution_reason": "Unique family-by-trajectory pair under the ascending-ID coverage optimum and 2–3-per-family quota."
+    }
+  ],
+  "coverage": {
+    "families": 20,
+    "trajectories": 17,
+    "family_trajectory_pairs": 50,
+    "family_counts": {
+      "CN01": 3,
+      "CN02": 3,
+      "CN03": 3,
+      "CN04": 3,
+      "CN05": 3,
+      "CN06": 3,
+      "CN07": 3,
+      "CN08": 3,
+      "CN09": 3,
+      "CN10": 3,
+      "CN11": 2,
+      "CN12": 2,
+      "CN13": 2,
+      "CN14": 2,
+      "CN15": 2,
+      "CN16": 2,
+      "CN17": 2,
+      "CN18": 2,
+      "CN19": 2,
+      "CN20": 2
+    },
+    "trajectory_counts": {
+      "abandon_after_guidance": 3,
+      "abandon_collection": 4,
+      "ambiguous_end": 3,
+      "customer_requests_human": 2,
+      "mixed_pending": 3,
+      "mixed_resolved": 3,
+      "neutral_resolved": 2,
+      "order_correction_resolved": 2,
+      "pending_negative": 4,
+      "pending_positive": 3,
+      "reengagement_no_reply": 3,
+      "reengagement_return_resolved": 3,
+      "repeated_attempts_pending": 2,
+      "resolved_negative": 3,
+      "resolved_positive": 4,
+      "restricted_transfer_pending": 3,
+      "technical_transfer_resolved": 3
+    },
+    "family_trajectory_pairs_list": [
+      {
+        "family": "CN01",
+        "trajectory": "pending_positive"
+      },
+      {
+        "family": "CN01",
+        "trajectory": "resolved_negative"
+      },
+      {
+        "family": "CN01",
+        "trajectory": "resolved_positive"
+      },
+      {
+        "family": "CN02",
+        "trajectory": "mixed_pending"
+      },
+      {
+        "family": "CN02",
+        "trajectory": "mixed_resolved"
+      },
+      {
+        "family": "CN02",
+        "trajectory": "pending_negative"
+      },
+      {
+        "family": "CN03",
+        "trajectory": "abandon_after_guidance"
+      },
+      {
+        "family": "CN03",
+        "trajectory": "abandon_collection"
+      },
+      {
+        "family": "CN03",
+        "trajectory": "reengagement_no_reply"
+      },
+      {
+        "family": "CN04",
+        "trajectory": "customer_requests_human"
+      },
+      {
+        "family": "CN04",
+        "trajectory": "reengagement_return_resolved"
+      },
+      {
+        "family": "CN04",
+        "trajectory": "restricted_transfer_pending"
+      },
+      {
+        "family": "CN05",
+        "trajectory": "ambiguous_end"
+      },
+      {
+        "family": "CN05",
+        "trajectory": "neutral_resolved"
+      },
+      {
+        "family": "CN05",
+        "trajectory": "technical_transfer_resolved"
+      },
+      {
+        "family": "CN06",
+        "trajectory": "order_correction_resolved"
+      },
+      {
+        "family": "CN06",
+        "trajectory": "repeated_attempts_pending"
+      },
+      {
+        "family": "CN06",
+        "trajectory": "resolved_positive"
+      },
+      {
+        "family": "CN07",
+        "trajectory": "pending_negative"
+      },
+      {
+        "family": "CN07",
+        "trajectory": "pending_positive"
+      },
+      {
+        "family": "CN07",
+        "trajectory": "resolved_negative"
+      },
+      {
+        "family": "CN08",
+        "trajectory": "abandon_collection"
+      },
+      {
+        "family": "CN08",
+        "trajectory": "mixed_pending"
+      },
+      {
+        "family": "CN08",
+        "trajectory": "mixed_resolved"
+      },
+      {
+        "family": "CN09",
+        "trajectory": "abandon_after_guidance"
+      },
+      {
+        "family": "CN09",
+        "trajectory": "reengagement_no_reply"
+      },
+      {
+        "family": "CN09",
+        "trajectory": "reengagement_return_resolved"
+      },
+      {
+        "family": "CN10",
+        "trajectory": "customer_requests_human"
+      },
+      {
+        "family": "CN10",
+        "trajectory": "restricted_transfer_pending"
+      },
+      {
+        "family": "CN10",
+        "trajectory": "technical_transfer_resolved"
+      },
+      {
+        "family": "CN11",
+        "trajectory": "ambiguous_end"
+      },
+      {
+        "family": "CN11",
+        "trajectory": "neutral_resolved"
+      },
+      {
+        "family": "CN12",
+        "trajectory": "order_correction_resolved"
+      },
+      {
+        "family": "CN12",
+        "trajectory": "resolved_positive"
+      },
+      {
+        "family": "CN13",
+        "trajectory": "pending_negative"
+      },
+      {
+        "family": "CN13",
+        "trajectory": "pending_positive"
+      },
+      {
+        "family": "CN14",
+        "trajectory": "abandon_collection"
+      },
+      {
+        "family": "CN14",
+        "trajectory": "mixed_pending"
+      },
+      {
+        "family": "CN15",
+        "trajectory": "reengagement_no_reply"
+      },
+      {
+        "family": "CN15",
+        "trajectory": "reengagement_return_resolved"
+      },
+      {
+        "family": "CN16",
+        "trajectory": "restricted_transfer_pending"
+      },
+      {
+        "family": "CN16",
+        "trajectory": "technical_transfer_resolved"
+      },
+      {
+        "family": "CN17",
+        "trajectory": "ambiguous_end"
+      },
+      {
+        "family": "CN17",
+        "trajectory": "repeated_attempts_pending"
+      },
+      {
+        "family": "CN18",
+        "trajectory": "resolved_negative"
+      },
+      {
+        "family": "CN18",
+        "trajectory": "resolved_positive"
+      },
+      {
+        "family": "CN19",
+        "trajectory": "mixed_resolved"
+      },
+      {
+        "family": "CN19",
+        "trajectory": "pending_negative"
+      },
+      {
+        "family": "CN20",
+        "trajectory": "abandon_after_guidance"
+      },
+      {
+        "family": "CN20",
+        "trajectory": "abandon_collection"
+      }
+    ]
+  },
+  "narrative_review": {
+    "reviewed_case_ids": [
+      "CN-SIM-0001",
+      "CN-SIM-0002",
+      "CN-SIM-0003",
+      "CN-SIM-0004",
+      "CN-SIM-0005",
+      "CN-SIM-0006",
+      "CN-SIM-0007",
+      "CN-SIM-0008",
+      "CN-SIM-0009",
+      "CN-SIM-0010",
+      "CN-SIM-0011",
+      "CN-SIM-0012",
+      "CN-SIM-0013",
+      "CN-SIM-0014",
+      "CN-SIM-0015",
+      "CN-SIM-0016",
+      "CN-SIM-0017",
+      "CN-SIM-0018",
+      "CN-SIM-0019",
+      "CN-SIM-0020",
+      "CN-SIM-0021",
+      "CN-SIM-0022",
+      "CN-SIM-0023",
+      "CN-SIM-0024",
+      "CN-SIM-0025",
+      "CN-SIM-0026",
+      "CN-SIM-0027",
+      "CN-SIM-0028",
+      "CN-SIM-0029",
+      "CN-SIM-0030",
+      "CN-SIM-0031",
+      "CN-SIM-0032",
+      "CN-SIM-0033",
+      "CN-SIM-0034",
+      "CN-SIM-0035",
+      "CN-SIM-0036",
+      "CN-SIM-0037",
+      "CN-SIM-0038",
+      "CN-SIM-0039",
+      "CN-SIM-0040",
+      "CN-SIM-0041",
+      "CN-SIM-0042",
+      "CN-SIM-0043",
+      "CN-SIM-0044",
+      "CN-SIM-0045",
+      "CN-SIM-0046",
+      "CN-SIM-0047",
+      "CN-SIM-0048",
+      "CN-SIM-0049",
+      "CN-SIM-0050"
+    ],
+    "review_type": "Parallel independent AI review, not expert human adjudication",
+    "proved_inconsistencies_excluded": [],
+    "retained_state_claim_discrepancies": [
+      {
+        "id": "CN-SIM-0030",
+        "message_ids": [
+          "CN-SIM-0030-M016",
+          "CN-SIM-0030-M017",
+          "CN-SIM-0030-M018",
+          "CN-SIM-0030-M019"
+        ],
+        "observation": "Operator says cancellation was completed; customer subsequently reports the order still open; operator then acknowledges a pending next step.",
+        "decision": "retain",
+        "reason": "Conflicting operator claim and customer verification can represent a failed action or synchronization issue. This does not prove an impossible narrative. Determine current resolution from the customer observation, not the operator assertion."
+      },
+      {
+        "id": "CN-SIM-0037",
+        "message_ids": [
+          "CN-SIM-0037-M014",
+          "CN-SIM-0037-M015",
+          "CN-SIM-0037-M016"
+        ],
+        "observation": "Operator says subscription was canceled; customer subsequently still sees an active plan; operator then acknowledges a pending next step.",
+        "decision": "retain",
+        "reason": "An unsuccessful cancellation or stale state is a plausible service event. Retain the original competing claims for independent gold review; no provider result is involved."
+      },
+      {
+        "id": "CN-SIM-0044",
+        "message_ids": [
+          "CN-SIM-0044-M015",
+          "CN-SIM-0044-M016",
+          "CN-SIM-0044-M017"
+        ],
+        "observation": "Operator says exchange was authorized; customer subsequently still sees the authorization block.",
+        "decision": "retain",
+        "reason": "A permission update failing to appear for the customer is plausible. An operator success assertion is not customer confirmation and is not a proved narrative inconsistency."
+      }
+    ],
+    "note": "No case was discarded for its intended outcome, difficult labels, or possible provider performance. Cases not selected are omitted only by deterministic sample size and coverage rules."
+  },
+  "preservation": {
+    "original_case_ids": true,
+    "original_message_ids": true,
+    "original_message_text": true,
+    "original_authors_names_times": true,
+    "actor_type_preserved": true,
+    "original_case_objects_unchanged": true
+  },
+  "final_dataset_sha256": "f8a18bb13af40ca15ff99455eb604e292f4ab3facc18f0c2f96ff5fff9635b41",
+  "preflight_case_ids": [
+    "CN-SIM-0051",
+    "CN-SIM-0052"
+  ],
+  "gold_sha256": "92d02601ce8900c935938565f4cddaf7c23dc4e0c07ab26055479609c61f01e3"
+}

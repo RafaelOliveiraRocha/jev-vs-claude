@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1366
+PlayResY: 900
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Main,DejaVu Sans,31,&H00F3F5F8,&H00F3F5F8,&H0015210B,&H0015210B,0,0,0,0,100,100,0,0,1,0,0,5,40,40,0,1
+Style: Footer,DejaVu Sans,19,&H007AD9F2,&H007AD9F2,&H0015210B,&H0015210B,-1,0,0,0,100,100,0,0,1,0,0,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:04.00,Main,,0,0,0,,{\pos(683,814)\fs31}50 atendimentos sintéticos. Mesmas entradas para os dois modelos.\N6 perguntas de classificação + 6 evidências por atendimento.
+Dialogue: 1,0:00:04.00,0:00:07.73,Main,,0,0,0,,{\pos(683,814)\fs31}Chamadas reais às APIs. Concorrência igual: 2 pedidos por modelo.\NTodo o processamento aparece sem cortes, em reprodução 1,5×.
+Dialogue: 1,0:00:07.73,0:00:16.00,Main,,0,0,0,,{\pos(683,814)\fs31}Jev concluiu seus 50 atendimentos; Claude continua.\NTempo real medido de Jev: 9,42 s.
+Dialogue: 1,0:00:16.00,0:00:26.00,Main,,0,0,0,,{\pos(683,814)\fs31}Necessidade, dificuldade, resolução, motivo da transferência.\NAvaliações positiva e negativa: seis classificações estruturadas.
+Dialogue: 1,0:00:26.00,0:00:36.00,Main,,0,0,0,,{\pos(683,814)\fs31}Os modelos recebem os mesmos diálogos, perguntas e critérios.\NGabarito local definido antes do lote; não enviado às APIs.
+Dialogue: 1,0:00:36.00,0:00:46.16,Main,,0,0,0,,{\pos(683,814)\fs31}Claude continua: classificações e evidências seguem independentes.\NResolução exige relato explícito do cliente; promessa não basta.
+Dialogue: 1,0:00:46.16,0:00:48.45,Main,,0,0,0,,{\pos(683,814)\fs31}Tempo real do lote: Jev 9,42 s | Claude 66,99 s.\NCusto estimado: Jev US$ 0,01504 | Claude US$ 0,43748.
+Dialogue: 1,0:00:48.45,0:00:50.21,Main,,0,0,0,,{\pos(683,814)\fs31}Quando há evidência suficiente, a resposta aponta para uma mensagem.\NA referência exibida permite conferir o julgamento.
+Dialogue: 1,0:00:50.21,0:00:54.21,Main,,0,0,0,,{\pos(683,814)\fs31}Acordo nas classificações válidas: Jev 276/300 | Claude 271/300.\N300 julgamentos previstos por modelo; gabarito definido antes do lote.
+Dialogue: 1,0:00:54.21,0:00:58.21,Main,,0,0,0,,{\pos(683,814)\fs31}Acordo nas evidências válidas: Jev 245/300 | Claude 266/300.\NFalhas de validação: Jev 0 | Claude 0.
+Dialogue: 1,0:00:58.21,0:01:00.21,Main,,0,0,0,,{\pos(683,814)\fs31}Atendimentos sintéticos revisados. Uma execução controlada.\NTempos, custos e acertos deste lote; sem generalização de desempenho.
+Dialogue: 0,0:00:00.00,0:01:00.21,Footer,,0,0,0,,{\pos(683,878)}REPRODUÇÃO 1,5× • relógios mostram tempos reais • atendimentos sintéticos

@@ -1,0 +1,83 @@
+{
+  "runId": "preflight-2026-10-05T00-39-33-774Z-49e55541",
+  "phase": "preflight",
+  "status": "completed",
+  "createdAt": "2026-10-05T00:39:33.775Z",
+  "models": {
+    "jev": "jev-1.13.0",
+    "claude": "claude-haiku-4-5-20251001"
+  },
+  "datasetSha256": "f8a18bb13af40ca15ff99455eb604e292f4ab3facc18f0c2f96ff5fff9635b41",
+  "questionsSha256": "0d91218be4d3c83dda2453a84d6c561e7ee56938f0c870d57c2ff1527e3471ea",
+  "caseIds": [
+    "CN-SIM-0051",
+    "CN-SIM-0052"
+  ],
+  "reservedCalls": {
+    "jev": 2,
+    "claude": 2
+  },
+  "claudeBoundUsd": 0.020380000000000002,
+  "costBoundMethod": "Free Anthropic token-count estimate + 256 input-token margin per call, plus 384 maximum output tokens; requests hashed and full batch reserved before execution. Estimate is not a mathematically guaranteed billing bound.",
+  "rates": {
+    "claude": {
+      "inputPerMillionUsd": 1,
+      "outputPerMillionUsd": 5,
+      "verified": true,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    "jev": {
+      "inputPerMillionUsd": 0.042,
+      "outputPerMillionUsd": 0,
+      "verified": true,
+      "source": "https://docs.typesafe.ai/models"
+    }
+  },
+  "validResults": 4,
+  "providers": {
+    "jev": {
+      "batchElapsedMs": 589.8731720000069,
+      "startedAt": "2026-10-05T00:39:33.775Z",
+      "completedAt": "2026-10-05T00:39:34.372Z",
+      "completed": 2,
+      "total": 2,
+      "medianRequestMs": 508.6794634999969,
+      "estimatedCostUsd": 0.000675612,
+      "categoryCorrect": 12,
+      "categoryTotal": 12,
+      "evidenceCorrect": 10,
+      "evidenceTotal": 12,
+      "validationFailures": 0,
+      "successful": 2,
+      "inputTokens": 16086,
+      "outputTokens": 4553,
+      "returnedModels": [
+        "jev-1.13.0"
+      ],
+      "timingDefinition": "Common batch dispatch to last response body received; concurrency two, no retries or reused responses."
+    },
+    "claude": {
+      "batchElapsedMs": 2770.455783000012,
+      "startedAt": "2026-10-05T00:39:33.775Z",
+      "completedAt": "2026-10-05T00:39:36.551Z",
+      "completed": 2,
+      "total": 2,
+      "medianRequestMs": 2717.0510445000036,
+      "estimatedCostUsd": 0.019162,
+      "categoryCorrect": 11,
+      "categoryTotal": 12,
+      "evidenceCorrect": 12,
+      "evidenceTotal": 12,
+      "validationFailures": 0,
+      "successful": 2,
+      "inputTokens": 16222,
+      "outputTokens": 588,
+      "returnedModels": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "timingDefinition": "Common batch dispatch to last response body received; concurrency two, no retries or reused responses."
+    }
+  },
+  "completedAt": "2026-10-05T00:39:36.552Z",
+  "batchElapsedMs": 2774.682050000003
+}

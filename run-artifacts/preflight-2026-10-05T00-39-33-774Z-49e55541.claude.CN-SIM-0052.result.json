@@ -1,0 +1,67 @@
+{
+  "runId": "preflight-2026-10-05T00-39-33-774Z-49e55541",
+  "phase": "preflight",
+  "caseId": "CN-SIM-0052",
+  "provider": "claude",
+  "requestedModel": "claude-haiku-4-5-20251001",
+  "returnedModel": "claude-haiku-4-5-20251001",
+  "status": "success",
+  "elapsedMs": 2735.196378000008,
+  "startedAt": "2026-10-05T00:39:33.779Z",
+  "completedAt": "2026-10-05T00:39:36.549Z",
+  "httpStatus": 200,
+  "usage": {
+    "inputTokens": 8490,
+    "outputTokens": 293,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0
+  },
+  "estimatedCostUsd": 0.009955,
+  "rateVerified": true,
+  "costLabel": "Estimated from reported token usage and configured published rates; not an invoice.",
+  "normalized": {
+    "need": "exchange",
+    "need_evidence": "CN-SIM-0052-M003",
+    "difficulty": "product_issue",
+    "difficulty_evidence": "CN-SIM-0052-M003",
+    "resolution": "resolved",
+    "resolution_evidence": "CN-SIM-0052-M019",
+    "positive_evaluation": "absent",
+    "positive_evaluation_evidence": "insufficient",
+    "negative_evaluation": "present",
+    "negative_evaluation_evidence": "CN-SIM-0052-M012",
+    "transfer_reason": "customer_request",
+    "transfer_reason_evidence": "CN-SIM-0052-M008"
+  },
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "score": {
+    "categories": {
+      "correct": 6,
+      "total": 6
+    },
+    "evidence": {
+      "correct": 6,
+      "total": 6
+    },
+    "fields": {
+      "need": true,
+      "need_evidence": true,
+      "difficulty": true,
+      "difficulty_evidence": true,
+      "resolution": true,
+      "resolution_evidence": true,
+      "positive_evaluation": true,
+      "positive_evaluation_evidence": true,
+      "negative_evaluation": true,
+      "negative_evaluation_evidence": true,
+      "transfer_reason": true,
+      "transfer_reason_evidence": true
+    },
+    "interpretation": "Agreement with this illustrative, locally reviewed answer key; independent from structural validation."
+  },
+  "error": null,
+  "artifactPrefix": "preflight-2026-10-05T00-39-33-774Z-49e55541.claude.CN-SIM-0052"
+}

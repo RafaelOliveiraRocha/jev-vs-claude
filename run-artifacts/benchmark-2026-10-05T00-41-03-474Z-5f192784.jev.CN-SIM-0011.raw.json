@@ -1,0 +1,206 @@
+{
+  "startedAt": "2026-10-05T00:41:05.490Z",
+  "completedAt": "2026-10-05T00:41:05.797Z",
+  "httpStatus": 200,
+  "elapsedMs": 301.86078600000474,
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "need": {
+        "type": "choice",
+        "choice": "profile",
+        "confidence": 1,
+        "probabilities": {
+          "profile": 1,
+          "warranty": 0,
+          "billing": 0,
+          "cancellation": 0,
+          "refund": 0,
+          "other": 0,
+          "exchange": 0,
+          "delivery": 0,
+          "insufficient": 0,
+          "document": 0
+        }
+      },
+      "need_evidence": {
+        "type": "choice",
+        "choice": "CN-SIM-0011-M002",
+        "confidence": 0.99,
+        "probabilities": {
+          "CN-SIM-0011-M014": 0,
+          "CN-SIM-0011-M003": 0,
+          "CN-SIM-0011-M009": 0,
+          "CN-SIM-0011-M004": 0,
+          "CN-SIM-0011-M011": 0,
+          "CN-SIM-0011-M001": 0,
+          "CN-SIM-0011-M012": 0,
+          "CN-SIM-0011-M015": 0,
+          "CN-SIM-0011-M010": 0,
+          "CN-SIM-0011-M013": 0,
+          "CN-SIM-0011-M002": 0.99,
+          "CN-SIM-0011-M006": 0.01,
+          "CN-SIM-0011-M005": 0,
+          "CN-SIM-0011-M008": 0,
+          "CN-SIM-0011-M007": 0,
+          "insufficient": 0
+        }
+      },
+      "difficulty": {
+        "type": "choice",
+        "choice": "account_data",
+        "confidence": 0.89,
+        "probabilities": {
+          "portal_failure": 0.03,
+          "unclear_guidance": 0,
+          "account_data": 0.9,
+          "restricted_access": 0.05,
+          "none": 0.01,
+          "product_issue": 0,
+          "other": 0.01,
+          "delay": 0,
+          "billing_dispute": 0,
+          "insufficient": 0
+        }
+      },
+      "difficulty_evidence": {
+        "type": "choice",
+        "choice": "CN-SIM-0011-M008",
+        "confidence": 0.99,
+        "probabilities": {
+          "CN-SIM-0011-M014": 0,
+          "CN-SIM-0011-M003": 0,
+          "CN-SIM-0011-M009": 0,
+          "CN-SIM-0011-M011": 0,
+          "CN-SIM-0011-M004": 0,
+          "CN-SIM-0011-M012": 0,
+          "CN-SIM-0011-M001": 0,
+          "CN-SIM-0011-M010": 0,
+          "CN-SIM-0011-M002": 0,
+          "CN-SIM-0011-M013": 0,
+          "CN-SIM-0011-M015": 0,
+          "CN-SIM-0011-M006": 0.01,
+          "CN-SIM-0011-M005": 0,
+          "CN-SIM-0011-M008": 0.99,
+          "CN-SIM-0011-M007": 0,
+          "insufficient": 0
+        }
+      },
+      "resolution": {
+        "type": "choice",
+        "choice": "resolved",
+        "confidence": 1,
+        "probabilities": {
+          "resolved": 1,
+          "unresolved": 0,
+          "insufficient": 0
+        }
+      },
+      "resolution_evidence": {
+        "type": "choice",
+        "choice": "CN-SIM-0011-M012",
+        "confidence": 0.99,
+        "probabilities": {
+          "CN-SIM-0011-M014": 0.01,
+          "CN-SIM-0011-M004": 0,
+          "CN-SIM-0011-M002": 0,
+          "CN-SIM-0011-M012": 0.99,
+          "CN-SIM-0011-M006": 0,
+          "insufficient": 0,
+          "CN-SIM-0011-M010": 0
+        }
+      },
+      "positive_evaluation": {
+        "type": "choice",
+        "choice": "absent",
+        "confidence": 0.86,
+        "probabilities": {
+          "absent": 0.91,
+          "insufficient": 0,
+          "present": 0.09
+        }
+      },
+      "positive_evaluation_evidence": {
+        "type": "choice",
+        "choice": "insufficient",
+        "confidence": 0.56,
+        "probabilities": {
+          "CN-SIM-0011-M014": 0.07,
+          "CN-SIM-0011-M004": 0,
+          "CN-SIM-0011-M002": 0,
+          "CN-SIM-0011-M012": 0.3,
+          "CN-SIM-0011-M006": 0,
+          "insufficient": 0.63,
+          "CN-SIM-0011-M010": 0
+        }
+      },
+      "negative_evaluation": {
+        "type": "choice",
+        "choice": "absent",
+        "confidence": 1,
+        "probabilities": {
+          "absent": 1,
+          "insufficient": 0,
+          "present": 0
+        }
+      },
+      "negative_evaluation_evidence": {
+        "type": "choice",
+        "choice": "insufficient",
+        "confidence": 0.99,
+        "probabilities": {
+          "CN-SIM-0011-M014": 0,
+          "CN-SIM-0011-M004": 0,
+          "CN-SIM-0011-M002": 0,
+          "CN-SIM-0011-M012": 0,
+          "CN-SIM-0011-M006": 0.01,
+          "insufficient": 0.99,
+          "CN-SIM-0011-M010": 0
+        }
+      },
+      "transfer_reason": {
+        "type": "choice",
+        "choice": "missing_capability",
+        "confidence": 0.96,
+        "probabilities": {
+          "other": 0,
+          "access_restriction": 0,
+          "process_failure": 0,
+          "not_transferred": 0,
+          "customer_request": 0,
+          "missing_capability": 0.97,
+          "insufficient": 0.03
+        }
+      },
+      "transfer_reason_evidence": {
+        "type": "choice",
+        "choice": "CN-SIM-0011-M008",
+        "confidence": 0.93,
+        "probabilities": {
+          "CN-SIM-0011-M014": 0,
+          "CN-SIM-0011-M003": 0,
+          "CN-SIM-0011-M009": 0,
+          "CN-SIM-0011-M011": 0,
+          "CN-SIM-0011-M004": 0,
+          "CN-SIM-0011-M001": 0,
+          "CN-SIM-0011-M012": 0,
+          "CN-SIM-0011-M015": 0,
+          "CN-SIM-0011-M002": 0,
+          "CN-SIM-0011-M013": 0,
+          "CN-SIM-0011-M010": 0,
+          "CN-SIM-0011-M006": 0,
+          "CN-SIM-0011-M005": 0,
+          "CN-SIM-0011-M008": 0.9400000000000001,
+          "CN-SIM-0011-M007": 0,
+          "insufficient": 0.06
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 6396,
+      "output_tokens": 1756
+    }
+  },
+  "rawText": "{\"model\":\"jev-1.13.0\",\"answers\":{\"need\":{\"type\":\"choice\",\"choice\":\"profile\",\"confidence\":1.0,\"probabilities\":{\"profile\":1.0,\"warranty\":0.0,\"billing\":0.0,\"cancellation\":0.0,\"refund\":0.0,\"other\":0.0,\"exchange\":0.0,\"delivery\":0.0,\"insufficient\":0.0,\"document\":0.0}},\"need_evidence\":{\"type\":\"choice\",\"choice\":\"CN-SIM-0011-M002\",\"confidence\":0.99,\"probabilities\":{\"CN-SIM-0011-M014\":0.0,\"CN-SIM-0011-M003\":0.0,\"CN-SIM-0011-M009\":0.0,\"CN-SIM-0011-M004\":0.0,\"CN-SIM-0011-M011\":0.0,\"CN-SIM-0011-M001\":0.0,\"CN-SIM-0011-M012\":0.0,\"CN-SIM-0011-M015\":0.0,\"CN-SIM-0011-M010\":0.0,\"CN-SIM-0011-M013\":0.0,\"CN-SIM-0011-M002\":0.99,\"CN-SIM-0011-M006\":0.01,\"CN-SIM-0011-M005\":0.0,\"CN-SIM-0011-M008\":0.0,\"CN-SIM-0011-M007\":0.0,\"insufficient\":0.0}},\"difficulty\":{\"type\":\"choice\",\"choice\":\"account_data\",\"confidence\":0.89,\"probabilities\":{\"portal_failure\":0.03,\"unclear_guidance\":0.0,\"account_data\":0.9,\"restricted_access\":0.05,\"none\":0.01,\"product_issue\":0.0,\"other\":0.01,\"delay\":0.0,\"billing_dispute\":0.0,\"insufficient\":0.0}},\"difficulty_evidence\":{\"type\":\"choice\",\"choice\":\"CN-SIM-0011-M008\",\"confidence\":0.99,\"probabilities\":{\"CN-SIM-0011-M014\":0.0,\"CN-SIM-0011-M003\":0.0,\"CN-SIM-0011-M009\":0.0,\"CN-SIM-0011-M011\":0.0,\"CN-SIM-0011-M004\":0.0,\"CN-SIM-0011-M012\":0.0,\"CN-SIM-0011-M001\":0.0,\"CN-SIM-0011-M010\":0.0,\"CN-SIM-0011-M002\":0.0,\"CN-SIM-0011-M013\":0.0,\"CN-SIM-0011-M015\":0.0,\"CN-SIM-0011-M006\":0.01,\"CN-SIM-0011-M005\":0.0,\"CN-SIM-0011-M008\":0.99,\"CN-SIM-0011-M007\":0.0,\"insufficient\":0.0}},\"resolution\":{\"type\":\"choice\",\"choice\":\"resolved\",\"confidence\":1.0,\"probabilities\":{\"resolved\":1.0,\"unresolved\":0.0,\"insufficient\":0.0}},\"resolution_evidence\":{\"type\":\"choice\",\"choice\":\"CN-SIM-0011-M012\",\"confidence\":0.99,\"probabilities\":{\"CN-SIM-0011-M014\":0.01,\"CN-SIM-0011-M004\":0.0,\"CN-SIM-0011-M002\":0.0,\"CN-SIM-0011-M012\":0.99,\"CN-SIM-0011-M006\":0.0,\"insufficient\":0.0,\"CN-SIM-0011-M010\":0.0}},\"positive_evaluation\":{\"type\":\"choice\",\"choice\":\"absent\",\"confidence\":0.86,\"probabilities\":{\"absent\":0.91,\"insufficient\":0.0,\"present\":0.09}},\"positive_evaluation_evidence\":{\"type\":\"choice\",\"choice\":\"insufficient\",\"confidence\":0.56,\"probabilities\":{\"CN-SIM-0011-M014\":0.07,\"CN-SIM-0011-M004\":0.0,\"CN-SIM-0011-M002\":0.0,\"CN-SIM-0011-M012\":0.3,\"CN-SIM-0011-M006\":0.0,\"insufficient\":0.63,\"CN-SIM-0011-M010\":0.0}},\"negative_evaluation\":{\"type\":\"choice\",\"choice\":\"absent\",\"confidence\":1.0,\"probabilities\":{\"absent\":1.0,\"insufficient\":0.0,\"present\":0.0}},\"negative_evaluation_evidence\":{\"type\":\"choice\",\"choice\":\"insufficient\",\"confidence\":0.99,\"probabilities\":{\"CN-SIM-0011-M014\":0.0,\"CN-SIM-0011-M004\":0.0,\"CN-SIM-0011-M002\":0.0,\"CN-SIM-0011-M012\":0.0,\"CN-SIM-0011-M006\":0.01,\"insufficient\":0.99,\"CN-SIM-0011-M010\":0.0}},\"transfer_reason\":{\"type\":\"choice\",\"choice\":\"missing_capability\",\"confidence\":0.96,\"probabilities\":{\"other\":0.0,\"access_restriction\":0.0,\"process_failure\":0.0,\"not_transferred\":0.0,\"customer_request\":0.0,\"missing_capability\":0.97,\"insufficient\":0.03}},\"transfer_reason_evidence\":{\"type\":\"choice\",\"choice\":\"CN-SIM-0011-M008\",\"confidence\":0.93,\"probabilities\":{\"CN-SIM-0011-M014\":0.0,\"CN-SIM-0011-M003\":0.0,\"CN-SIM-0011-M009\":0.0,\"CN-SIM-0011-M011\":0.0,\"CN-SIM-0011-M004\":0.0,\"CN-SIM-0011-M001\":0.0,\"CN-SIM-0011-M012\":0.0,\"CN-SIM-0011-M015\":0.0,\"CN-SIM-0011-M002\":0.0,\"CN-SIM-0011-M013\":0.0,\"CN-SIM-0011-M010\":0.0,\"CN-SIM-0011-M006\":0.0,\"CN-SIM-0011-M005\":0.0,\"CN-SIM-0011-M008\":0.9400000000000001,\"CN-SIM-0011-M007\":0.0,\"insufficient\":0.06}}},\"usage\":{\"input_tokens\":6396,\"output_tokens\":1756}}",
+  "transportStatus": "received"
+}

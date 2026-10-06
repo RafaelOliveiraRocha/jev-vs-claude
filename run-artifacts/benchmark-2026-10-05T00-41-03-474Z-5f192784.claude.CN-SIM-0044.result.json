@@ -1,0 +1,67 @@
+{
+  "runId": "benchmark-2026-10-05T00-41-03-474Z-5f192784",
+  "phase": "benchmark",
+  "caseId": "CN-SIM-0044",
+  "provider": "claude",
+  "requestedModel": "claude-haiku-4-5-20251001",
+  "returnedModel": "claude-haiku-4-5-20251001",
+  "status": "success",
+  "elapsedMs": 2914.0123979999917,
+  "startedAt": "2026-10-05T00:41:59.743Z",
+  "completedAt": "2026-10-05T00:42:02.664Z",
+  "httpStatus": 200,
+  "usage": {
+    "inputTokens": 7999,
+    "outputTokens": 295,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0
+  },
+  "estimatedCostUsd": 0.009474,
+  "rateVerified": true,
+  "costLabel": "Estimated from reported token usage and configured published rates; not an invoice.",
+  "normalized": {
+    "need": "exchange",
+    "need_evidence": "CN-SIM-0044-M003",
+    "difficulty": "restricted_access",
+    "difficulty_evidence": "CN-SIM-0044-M008",
+    "resolution": "unresolved",
+    "resolution_evidence": "CN-SIM-0044-M017",
+    "positive_evaluation": "absent",
+    "positive_evaluation_evidence": "insufficient",
+    "negative_evaluation": "present",
+    "negative_evaluation_evidence": "CN-SIM-0044-M016",
+    "transfer_reason": "access_restriction",
+    "transfer_reason_evidence": "CN-SIM-0044-M010"
+  },
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "score": {
+    "categories": {
+      "correct": 5,
+      "total": 6
+    },
+    "evidence": {
+      "correct": 5,
+      "total": 6
+    },
+    "fields": {
+      "need": true,
+      "need_evidence": true,
+      "difficulty": true,
+      "difficulty_evidence": true,
+      "resolution": true,
+      "resolution_evidence": true,
+      "positive_evaluation": true,
+      "positive_evaluation_evidence": true,
+      "negative_evaluation": false,
+      "negative_evaluation_evidence": false,
+      "transfer_reason": true,
+      "transfer_reason_evidence": true
+    },
+    "interpretation": "Agreement with this illustrative, locally reviewed answer key; independent from structural validation."
+  },
+  "error": null,
+  "artifactPrefix": "benchmark-2026-10-05T00-41-03-474Z-5f192784.claude.CN-SIM-0044"
+}

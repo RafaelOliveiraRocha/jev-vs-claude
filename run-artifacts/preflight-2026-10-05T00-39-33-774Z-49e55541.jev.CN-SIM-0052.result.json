@@ -1,0 +1,67 @@
+{
+  "runId": "preflight-2026-10-05T00-39-33-774Z-49e55541",
+  "phase": "preflight",
+  "caseId": "CN-SIM-0052",
+  "provider": "jev",
+  "requestedModel": "jev-1.13.0",
+  "returnedModel": "jev-1.13.0",
+  "status": "success",
+  "elapsedMs": 431.3684280000016,
+  "startedAt": "2026-10-05T00:39:33.778Z",
+  "completedAt": "2026-10-05T00:39:34.245Z",
+  "httpStatus": 200,
+  "usage": {
+    "inputTokens": 8468,
+    "outputTokens": 2409,
+    "cacheCreationInputTokens": null,
+    "cacheReadInputTokens": null
+  },
+  "estimatedCostUsd": 0.000355656,
+  "rateVerified": true,
+  "costLabel": "Estimated from reported token usage and configured published rates; not an invoice.",
+  "normalized": {
+    "need": "exchange",
+    "need_evidence": "CN-SIM-0052-M003",
+    "difficulty": "product_issue",
+    "difficulty_evidence": "CN-SIM-0052-M007",
+    "resolution": "resolved",
+    "resolution_evidence": "CN-SIM-0052-M019",
+    "positive_evaluation": "absent",
+    "positive_evaluation_evidence": "insufficient",
+    "negative_evaluation": "present",
+    "negative_evaluation_evidence": "CN-SIM-0052-M012",
+    "transfer_reason": "customer_request",
+    "transfer_reason_evidence": "CN-SIM-0052-M013"
+  },
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "score": {
+    "categories": {
+      "correct": 6,
+      "total": 6
+    },
+    "evidence": {
+      "correct": 6,
+      "total": 6
+    },
+    "fields": {
+      "need": true,
+      "need_evidence": true,
+      "difficulty": true,
+      "difficulty_evidence": true,
+      "resolution": true,
+      "resolution_evidence": true,
+      "positive_evaluation": true,
+      "positive_evaluation_evidence": true,
+      "negative_evaluation": true,
+      "negative_evaluation_evidence": true,
+      "transfer_reason": true,
+      "transfer_reason_evidence": true
+    },
+    "interpretation": "Agreement with this illustrative, locally reviewed answer key; independent from structural validation."
+  },
+  "error": null,
+  "artifactPrefix": "preflight-2026-10-05T00-39-33-774Z-49e55541.jev.CN-SIM-0052"
+}

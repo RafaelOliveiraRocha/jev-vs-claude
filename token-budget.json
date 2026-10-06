@@ -1,0 +1,322 @@
+{
+  "createdAt": "2026-10-05T00:36:49.215Z",
+  "method": "Anthropic free count_tokens endpoint, complete state/questions/tools; no model generation",
+  "inputMarginPerCall": 256,
+  "outputTokensPerCall": 384,
+  "estimatedReserveUsd": 0.489193,
+  "calls": 52,
+  "cases": [
+    {
+      "id": "CN-SIM-0001",
+      "split": "benchmark",
+      "inputTokens": 6781,
+      "requestSha256": "095f5c96bf1f83faa03082149a22ccd947f134b8f3dc6499da078464e6b89b13"
+    },
+    {
+      "id": "CN-SIM-0002",
+      "split": "benchmark",
+      "inputTokens": 8126,
+      "requestSha256": "bd7c46cbe43b95403ffee35e6ab2759dc333106502b4694fc0e598e6b504c169"
+    },
+    {
+      "id": "CN-SIM-0003",
+      "split": "benchmark",
+      "inputTokens": 4732,
+      "requestSha256": "094d895e8f2eefc720da2708bc62b758f015a800a1c9e205e7f290311c8a654e"
+    },
+    {
+      "id": "CN-SIM-0004",
+      "split": "benchmark",
+      "inputTokens": 7223,
+      "requestSha256": "58b512a69510e34caf8e30064c4e2c4595675398285a06170daaa1ddd161c01b"
+    },
+    {
+      "id": "CN-SIM-0005",
+      "split": "benchmark",
+      "inputTokens": 7125,
+      "requestSha256": "e0e0844ed01b3e598bbd05e65b264351ddb9313d67b5c9ce6d4ea26b9fb619c7"
+    },
+    {
+      "id": "CN-SIM-0006",
+      "split": "benchmark",
+      "inputTokens": 8701,
+      "requestSha256": "3258d99a0dd519f2afe02607b496cd9291867a85e5bec6423164a069facdc199"
+    },
+    {
+      "id": "CN-SIM-0007",
+      "split": "benchmark",
+      "inputTokens": 7835,
+      "requestSha256": "48180a0d6e8c964bc956c3ffe96fff901d843e3e5fdfa6954e4995a04ad4f873"
+    },
+    {
+      "id": "CN-SIM-0008",
+      "split": "benchmark",
+      "inputTokens": 8671,
+      "requestSha256": "0c7a1fadfbf6c03b762883984b572fd8d0b5ff9218d96aa45f15c6cea64f2ee6"
+    },
+    {
+      "id": "CN-SIM-0009",
+      "split": "benchmark",
+      "inputTokens": 5470,
+      "requestSha256": "ce66d78cb4aec63683e681f7cb2f42bcb398bfd4cec107e008044a1ab297a7e5"
+    },
+    {
+      "id": "CN-SIM-0010",
+      "split": "benchmark",
+      "inputTokens": 7910,
+      "requestSha256": "8e94da24f07c8506e5400d24b6483c693c3450051abcb546e82bda76be18c10c"
+    },
+    {
+      "id": "CN-SIM-0011",
+      "split": "benchmark",
+      "inputTokens": 6510,
+      "requestSha256": "068d6c08e49d0370bff37fba5c4fd6091c5e8f91b40c8138f729d6988a935cbb"
+    },
+    {
+      "id": "CN-SIM-0012",
+      "split": "benchmark",
+      "inputTokens": 9438,
+      "requestSha256": "c6596b6188f91bc9b880c1976a853f023d4649b546629ce6f33f15938c49a597"
+    },
+    {
+      "id": "CN-SIM-0013",
+      "split": "benchmark",
+      "inputTokens": 6813,
+      "requestSha256": "830e1e15c87aadafc5e91d7a3fb474c91dc0d8e420c40af6877609dac60b0102"
+    },
+    {
+      "id": "CN-SIM-0014",
+      "split": "benchmark",
+      "inputTokens": 8929,
+      "requestSha256": "35d76e84b972ab333bfe5141523cfca7d45bb36665bec474f1b7993448c52235"
+    },
+    {
+      "id": "CN-SIM-0015",
+      "split": "benchmark",
+      "inputTokens": 5792,
+      "requestSha256": "bc590af57f1249a2b27d368e63ded9d3dccbd0268c1868434787c852ec5b38f1"
+    },
+    {
+      "id": "CN-SIM-0016",
+      "split": "benchmark",
+      "inputTokens": 7912,
+      "requestSha256": "72ee45ec89c231f2b84ed2c55e59e5619cdb07f240abd5039f660be60f80ea0b"
+    },
+    {
+      "id": "CN-SIM-0017",
+      "split": "benchmark",
+      "inputTokens": 5964,
+      "requestSha256": "f8362072b7d38bcbabdc6b8788d0ca902e42721b80de2c61f635550f8c51971f"
+    },
+    {
+      "id": "CN-SIM-0018",
+      "split": "benchmark",
+      "inputTokens": 8198,
+      "requestSha256": "fe252b20e8f3f936d6b809dce3fae941bde17626f05dac5dc3c227bc1365c1ad"
+    },
+    {
+      "id": "CN-SIM-0019",
+      "split": "benchmark",
+      "inputTokens": 7294,
+      "requestSha256": "478095a996fb78b03f6fa0524d58082ac3bea382ec63689dfd9dc5d7d5afb27d"
+    },
+    {
+      "id": "CN-SIM-0020",
+      "split": "benchmark",
+      "inputTokens": 5068,
+      "requestSha256": "91d94c6e92487146f2ab9465949a8b4660239159fe3c87487c81d2581f606d8a"
+    },
+    {
+      "id": "CN-SIM-0021",
+      "split": "benchmark",
+      "inputTokens": 8370,
+      "requestSha256": "31877ef3d0fb990bd00529b7e85d11bddc13a78f720d753cb9cbf7264973a97b"
+    },
+    {
+      "id": "CN-SIM-0022",
+      "split": "benchmark",
+      "inputTokens": 8107,
+      "requestSha256": "1fa7e6fe188f5128fb59e65bdc9ea31706ab1e7a02888b299f40c4333982a8d7"
+    },
+    {
+      "id": "CN-SIM-0023",
+      "split": "benchmark",
+      "inputTokens": 5188,
+      "requestSha256": "2cde6dfd20ee54bda5279619387ac988898a3d7f69a04744ce9ba23002b9c2fb"
+    },
+    {
+      "id": "CN-SIM-0024",
+      "split": "benchmark",
+      "inputTokens": 9112,
+      "requestSha256": "52276c8c3efeb90c360ccd5f45fb188286e956989c80f7a42e2db6ac3553b124"
+    },
+    {
+      "id": "CN-SIM-0025",
+      "split": "benchmark",
+      "inputTokens": 6792,
+      "requestSha256": "0745e41c7907e31b17b1c2290e1844c7268f1058452c60abec0b474e4c46501a"
+    },
+    {
+      "id": "CN-SIM-0026",
+      "split": "benchmark",
+      "inputTokens": 7895,
+      "requestSha256": "a59b57cc9d7af75d9e66446b32260e87b64d0ab071ae2cf95308ce3d2caf718c"
+    },
+    {
+      "id": "CN-SIM-0027",
+      "split": "benchmark",
+      "inputTokens": 7122,
+      "requestSha256": "99615ea3ddfcadaa3ea050fe1f9f076c553ed23ed8e61a174d05d6a93c57d78b"
+    },
+    {
+      "id": "CN-SIM-0028",
+      "split": "benchmark",
+      "inputTokens": 9188,
+      "requestSha256": "f2a28d86aea83a52d113aae1ad7576700708b981793e9b015728c486df0cb4ed"
+    },
+    {
+      "id": "CN-SIM-0029",
+      "split": "benchmark",
+      "inputTokens": 5184,
+      "requestSha256": "b6fbe490c0c93a6d24027a82b13d3b9e348d42d8e85515949b859229e7bc058f"
+    },
+    {
+      "id": "CN-SIM-0030",
+      "split": "benchmark",
+      "inputTokens": 8233,
+      "requestSha256": "e2896052169394d749abc1ff551b9b11c02ba763d188e440527f85e7114c26cb"
+    },
+    {
+      "id": "CN-SIM-0031",
+      "split": "benchmark",
+      "inputTokens": 5985,
+      "requestSha256": "54162a0a2346da437ff672ec433727177f286f1389b4a8ba2963c56fc54a19a8"
+    },
+    {
+      "id": "CN-SIM-0032",
+      "split": "benchmark",
+      "inputTokens": 7888,
+      "requestSha256": "46f3328f1d149c76ff197843436e048d086c29a49e3859e4669c2949e1c91f81"
+    },
+    {
+      "id": "CN-SIM-0033",
+      "split": "benchmark",
+      "inputTokens": 7612,
+      "requestSha256": "9ab793da7089b6ec9a5c7be8dc2083b8e7d6404849b9ea2296e1649c5b0a6d34"
+    },
+    {
+      "id": "CN-SIM-0034",
+      "split": "benchmark",
+      "inputTokens": 4455,
+      "requestSha256": "4d64579618f4294889a97c21f58ac290bd58fbea57018d14220986f1c5051974"
+    },
+    {
+      "id": "CN-SIM-0035",
+      "split": "benchmark",
+      "inputTokens": 6618,
+      "requestSha256": "dafbf5641ce31d8f9889dd0e5b88c20fefbd7d6c4d768262348e0248e4f9d21a"
+    },
+    {
+      "id": "CN-SIM-0036",
+      "split": "benchmark",
+      "inputTokens": 8812,
+      "requestSha256": "7df33f7675dd70dfc9c9c830f84ac3e05574fcb0c515942aa267206e34b632d1"
+    },
+    {
+      "id": "CN-SIM-0037",
+      "split": "benchmark",
+      "inputTokens": 7332,
+      "requestSha256": "00020db0c46306ea97d1d362a8b5d90621a59752d1180882843409465c37b37d"
+    },
+    {
+      "id": "CN-SIM-0038",
+      "split": "benchmark",
+      "inputTokens": 7804,
+      "requestSha256": "0d9e62754ad9120c079476ae56ff0d966e88fcc04ddbba07282ff2d5bfe33215"
+    },
+    {
+      "id": "CN-SIM-0039",
+      "split": "benchmark",
+      "inputTokens": 8181,
+      "requestSha256": "2c8fbbbe02b54a56acc699aa179ce12fb7757cbee7ae7a91bbd44f3f7c3125fa"
+    },
+    {
+      "id": "CN-SIM-0040",
+      "split": "benchmark",
+      "inputTokens": 6094,
+      "requestSha256": "43eeb1cbeef2a935e098471fc17754ca4a9d460e6d9279bd32cb1741676e6236"
+    },
+    {
+      "id": "CN-SIM-0041",
+      "split": "benchmark",
+      "inputTokens": 6831,
+      "requestSha256": "00cb6a2e57c80618160ff154f0db269a32259225922ddfc04b4628b8957da0d8"
+    },
+    {
+      "id": "CN-SIM-0042",
+      "split": "benchmark",
+      "inputTokens": 9475,
+      "requestSha256": "81d3a7ee25f520c55f1028f8e5cffca2e26fe3c4f695ac993a96544dce23d072"
+    },
+    {
+      "id": "CN-SIM-0043",
+      "split": "benchmark",
+      "inputTokens": 5181,
+      "requestSha256": "bb66514ee8825f8c4bf206b06848c0c86397027891e22a54e961590a251a9e9f"
+    },
+    {
+      "id": "CN-SIM-0044",
+      "split": "benchmark",
+      "inputTokens": 7902,
+      "requestSha256": "35bd295a9b9a8332e05031072b931df4936a3c64d0bfeeeaad698bfaeeb592a6"
+    },
+    {
+      "id": "CN-SIM-0045",
+      "split": "benchmark",
+      "inputTokens": 6561,
+      "requestSha256": "ee314e9ddd35253a71f08264153a684e8aa7c90c818466c60f182d91f42823d2"
+    },
+    {
+      "id": "CN-SIM-0046",
+      "split": "benchmark",
+      "inputTokens": 7275,
+      "requestSha256": "1956977567a569d486d67cd5b8eb3d2fec1765281c1dcb79c1ecbe5916d2f46d"
+    },
+    {
+      "id": "CN-SIM-0047",
+      "split": "benchmark",
+      "inputTokens": 7314,
+      "requestSha256": "a2335be0c648b4e7b89e115b650a86af2eba256e12b949f22317e2f0f0682e97"
+    },
+    {
+      "id": "CN-SIM-0048",
+      "split": "benchmark",
+      "inputTokens": 5056,
+      "requestSha256": "7523ced41c09344d642f09a3424b02f5b57df6ddc6abfadd53d8dfaff823503b"
+    },
+    {
+      "id": "CN-SIM-0049",
+      "split": "benchmark",
+      "inputTokens": 6324,
+      "requestSha256": "1c13abf89d07a54f168a7e9f4256f19288808e33910e65cabb561b4f8e2080e0"
+    },
+    {
+      "id": "CN-SIM-0050",
+      "split": "benchmark",
+      "inputTokens": 7630,
+      "requestSha256": "da95f37b691ec1de968898e501219cc09a7d0f0889fe943011a1c4eaa1751a24"
+    },
+    {
+      "id": "CN-SIM-0051",
+      "split": "preflight",
+      "inputTokens": 7635,
+      "requestSha256": "a41af2a19b2f1c225fcb22a4b374eb0fb742b8d69719e197403b9355b11995b7"
+    },
+    {
+      "id": "CN-SIM-0052",
+      "split": "preflight",
+      "inputTokens": 8393,
+      "requestSha256": "1662adfc41ba192a3632129f5e1aed95efbe78baba9ec56b4798c44ebad7a395"
+    }
+  ]
+}

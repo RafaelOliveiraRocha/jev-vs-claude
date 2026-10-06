@@ -1,0 +1,12 @@
+{
+  "name": "jev-vs-claude",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Comparação documentada de Jev e Claude Haiku em 50 atendimentos sintéticos em português.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server.mjs",
+    "summarize": "node scripts/summarize.mjs"
+  }
+}

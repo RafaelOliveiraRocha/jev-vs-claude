@@ -1,0 +1,55 @@
+{
+  "startedAt": "2026-10-05T00:41:16.054Z",
+  "completedAt": "2026-10-05T00:41:18.270Z",
+  "httpStatus": 200,
+  "elapsedMs": 2215.233476000023,
+  "response": {
+    "model": "claude-haiku-4-5-20251001",
+    "id": "msg_011CfiAGKvYKqxDoBXxPfwby",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_017DXWvh8jeH4aqLv6xYLm3Y",
+        "name": "classify_dialogue",
+        "input": {
+          "need": "profile",
+          "need_evidence": "CN-SIM-0011-M002",
+          "difficulty": "account_data",
+          "difficulty_evidence": "CN-SIM-0011-M006",
+          "resolution": "resolved",
+          "resolution_evidence": "CN-SIM-0011-M012",
+          "positive_evaluation": "absent",
+          "positive_evaluation_evidence": "insufficient",
+          "negative_evaluation": "absent",
+          "negative_evaluation_evidence": "insufficient",
+          "transfer_reason": "missing_capability",
+          "transfer_reason_evidence": "CN-SIM-0011-M008"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ],
+    "container": null,
+    "stop_reason": "tool_use",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 6607,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 284,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+    },
+    "diagnostics": null
+  },
+  "rawText": "{\"model\":\"claude-haiku-4-5-20251001\",\"id\":\"msg_011CfiAGKvYKqxDoBXxPfwby\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"tool_use\",\"id\":\"toolu_017DXWvh8jeH4aqLv6xYLm3Y\",\"name\":\"classify_dialogue\",\"input\":{\"need\":\"profile\",\"need_evidence\":\"CN-SIM-0011-M002\",\"difficulty\":\"account_data\",\"difficulty_evidence\":\"CN-SIM-0011-M006\",\"resolution\":\"resolved\",\"resolution_evidence\":\"CN-SIM-0011-M012\",\"positive_evaluation\":\"absent\",\"positive_evaluation_evidence\":\"insufficient\",\"negative_evaluation\":\"absent\",\"negative_evaluation_evidence\":\"insufficient\",\"transfer_reason\":\"missing_capability\",\"transfer_reason_evidence\":\"CN-SIM-0011-M008\"},\"caller\":{\"type\":\"direct\"}}],\"container\":null,\"stop_reason\":\"tool_use\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":6607,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":284,\"service_tier\":\"standard\",\"inference_geo\":\"not_available\"},\"diagnostics\":null}",
+  "transportStatus": "received"
+}
