@@ -1,6 +1,6 @@
 # Jev e Claude Haiku: 50 atendimentos
 
-Experimento local executado em 04/10/2026, com chamadas reais ao Jev 1.13.0 e ao Claude Haiku 4.5 (`claude-haiku-4-5-20251001`). As conversas são sintéticas, em português, da loja fictícia Casa Nimbo. Nenhum atendimento de empresa real foi utilizado.
+Experimento local executado em 04/10/2026, com chamadas reais ao Jev 1.13.0 e ao Claude Haiku 4.5 (`claude-haiku-4-5-20251001`). As conversas são sintéticas, em português, da loja fictícia Casa Nimbo.
 
 ## Resultado medido
 
@@ -34,7 +34,7 @@ Resolução significa o último resultado explicitamente relatado pelo cliente. 
 
 Captura contínua do Chrome por `Page.startScreencast`, iniciada antes do clique que disparou as APIs. 600 frames originais e 120,2543 segundos de captura. A edição remove somente espera antes do clique e parte da pausa estática final. Todo o processamento e a inspeção permanecem contínuos. Reprodução uniforme em 1,5×, indicada no vídeo; relógios e métricas preservam os tempos reais. Vídeo sem narração e sem áudio.
 
-`recording/manifest.json`, índices de frames e `render-report.json` documentam origem, ações, tempos, edição e métricas. `capture.zip` preserva os pixels decodificados da captura em deltas RGB sem perdas; `compress-capture.py` permite reconstrução. Nenhum progresso ou resposta foi gerado para a filmagem.
+`recording/manifest.json`, índices de frames e `render-report.json` documentam origem, ações, tempos, edição e métricas. A reconstrução dos pixels depende de `capture.zip`, arquivo de deltas RGB sem perdas que não está incluído no repositório; `compress-capture.py` contém o procedimento correspondente. Nenhum progresso ou resposta foi gerado para a filmagem.
 
 ## Arquivos
 
@@ -45,7 +45,7 @@ Captura contínua do Chrome por `Page.startScreencast`, iniciada antes do clique
 - `server.mjs`, `benchmark-lib.mjs`, `index.html`: servidor e interface local.
 - `record.mjs`, `render-recording.py`, `compress-capture.py`: captura, edição e reconstrução.
 
-O servidor desta rodada ficou em `http://127.0.0.1:43193`, dentro de `/home/rocha/projetos/jev-comparison/reviewed-50` no Pop!_OS. O projeto anterior e seus resultados foram preservados. O ledger bloqueia novo disparo do mesmo lote. Segredos e arquivos `.env` não fazem parte do pacote.
+A interface local usa `http://127.0.0.1:43193`. O ledger bloqueia novo disparo do mesmo lote. Consultar os resultados registrados não requer chaves de API; novas execuções dependem de configuração própria e de um diretório separado.
 
 ## Tarifas usadas
 

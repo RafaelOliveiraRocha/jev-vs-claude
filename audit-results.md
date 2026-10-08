@@ -1,8 +1,8 @@
-# Auditoria breve dos resultados reais — 50 atendimentos
+# Análise das respostas registradas — 50 atendimentos sintéticos
 
-Os números favorecem Jev em custo e tempo e Claude na seleção de evidências. A diferença de categorias é pequena e não sustenta uma conclusão geral de superioridade: Jev acertou cinco campos de categoria a mais neste conjunto; Claude acertou 21 campos de evidência a mais contra o gabarito congelado.
+Os números favorecem Jev em custo e tempo e Claude na seleção de evidências. A diferença de categorias é pequena e não sustenta uma conclusão geral de superioridade: Jev obteve concordância em cinco campos de categoria a mais neste conjunto; Claude obteve concordância em 21 campos de evidência a mais contra o gabarito congelado.
 
-Esta auditoria leu `results.json`, o diálogo efetivo em `dataset.json`, `questions.json` atomic-v1 e o gabarito local congelado. Não houve chamadas de API, edição de gabarito/resultados ou recálculo com uma referência modificada. Os números abaixo são os resultados já registrados da fase benchmark; o preflight está excluído. As discordâncias defensáveis listadas depois são observações de auditoria, não novos pontos concedidos.
+A comparação usa `results.json`, os diálogos de `dataset.json`, os critérios atomic-v1 de `questions.json` e o gabarito congelado antes das chamadas. Os números são os resultados registrados do benchmark, excluindo a verificação prévia de transporte e formato. As discordâncias defensáveis discutidas abaixo contextualizam a referência, sem alterar o placar.
 
 | Medida do benchmark | Jev 1.13.0 | Claude Haiku 4.5 |
 |---|---:|---:|
@@ -16,7 +16,7 @@ Na configuração executada, Claude custou aproximadamente 29,1 vezes o Jev, e o
 
 ## Onde se concentram as diferenças
 
-Cada célula representa acertos contra a referência congelada, em 50 campos de cada tipo.
+Cada célula representa concordâncias com a referência congelada, em 50 campos de cada tipo.
 
 | Faceta | Categorias Jev / Claude | Evidências Jev / Claude |
 |---|---:|---:|
@@ -64,4 +64,6 @@ Por outro lado, M020 de 0006 (“baixar a nota fiscal do pedido.”), escolhido 
 
 O conjunto tem 50 conversas sintéticas selecionadas de um gerador com famílias e trajetórias recorrentes. Seus 300 campos por tipo não são 300 observações estatisticamente independentes. Houve uma execução por conversa e provedor, sem múltiplas sementes ou adjudicação humana cega independente. A revisão prévia evitou adaptar o gabarito aos outputs, mas não garantiu exaustividade de todos os IDs válidos nem removeu toda ambiguidade de primazia. Não há intervalo de confiança ou teste de significância que autorize uma classificação geral dos modelos.
 
-Formulação recomendada: “Neste teste sintético de 50 atendimentos, Jev entregou custo estimado cerca de 29 vezes menor e concluiu o lote cerca de sete vezes mais rápido. A concordância de categorias foi próxima, com pequena vantagem do Jev; Claude teve maior concordância na seleção de evidências, sobretudo de dificuldade. Os resultados medem concordância com uma referência local revisada e não comprovam acurácia em produção.”
+## Interpretação dos resultados
+
+Neste teste sintético de 50 atendimentos, Jev teve custo estimado cerca de 29 vezes menor e concluiu o lote cerca de sete vezes mais rápido. A concordância de categorias foi próxima, com pequena vantagem do Jev; Claude teve maior concordância na seleção de evidências, sobretudo de dificuldade. Os resultados medem concordância com uma referência local e não comprovam acurácia em produção.

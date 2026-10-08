@@ -39,7 +39,7 @@ O gabarito teve revisão semântica assistida por IA; não é anotação especia
 
 ## Consultar localmente
 
-Requisito: Node.js 22 ou superior. A conferência deste pacote foi feita com Node.js 24.19.0. Não há dependências npm para consultar a interface ou os resultados.
+Requisito: Node.js 22 ou superior. Ambiente de referência: Node.js 24.19.0. Não há dependências npm para consultar a interface ou os resultados.
 
 ```bash
 npm start
@@ -61,9 +61,9 @@ Os dois provedores receberam o mesmo diálogo e os mesmos critérios, adaptados 
 
 O [relatório da execução original](docs/relatorio-execucao.md) detalha configuração, seleção, tarifas históricas, orçamento e captura. [media/jev-vs-claude-50.mp4](media/jev-vs-claude-50.mp4) contém o vídeo final, com reprodução em 1,5× indicada na imagem, sem áudio. `recording/` preserva os metadados da captura. Os scripts de gravação e renderização foram mantidos; a renderização usa Python, Pillow e FFmpeg.
 
-O arquivo binário `capture.zip`, citado no relatório histórico, não integra este pacote para GitHub. Ele permanece no pacote original `jev-vs-claude-50-fontes.zip`, cujo SHA-256 é `40c29ac009acc543693f1cdf58f54f5147424e42ec325bc229c3cd658099300f`. Caminhos absolutos nos registros identificam o ambiente original da execução e não são requisitos para consultar os resultados.
+O arquivo `capture.zip`, necessário para reconstruir os pixels da captura original, não está incluído no repositório. O vídeo final e os metadados estão disponíveis; os scripts de reconstrução dependem desse arquivo adicional.
 
-Novas execuções pagas exigem configuração própria de chaves, modelos, tarifas, orçamento e um diretório de execução separado. Os resultados históricos foram preservados para auditoria.
+Novas execuções pagas exigem configuração própria de chaves, modelos, tarifas, orçamento e um diretório de execução separado. Os resultados registrados permitem analisar o lote sem novas chamadas.
 
 ## Autor
 
